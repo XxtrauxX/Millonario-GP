@@ -41,10 +41,10 @@ export default function Game() {
 
         setTeams(initializedTeams);
 
-        // Shuffle and set questions pool
         // We need 10 teams * 5 questions = 50 questions minimum.
-        const shuffled = shuffleArray(questionsData);
-        setQuestionsPool(shuffled);
+        // Disable shuffling to ensure specific questions for specific teams (e.g. Q1-5 for Team 1)
+        const questions = [...questionsData];
+        setQuestionsPool(questions);
 
         setGameState('playing');
         setCurrentTeamIndex(0);

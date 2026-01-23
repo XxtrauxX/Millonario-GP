@@ -28,11 +28,25 @@ export default function SetupScreen({ onStartGame }) {
     };
 
     // Helper to auto-fill for testing/demo purposes
+    // Helper to auto-fill for testing/demo purposes
     const fillDummyData = () => {
+        const specificTeams = [
+            { name1: "Manuella Hernandez", name2: "Vanesa Usuga" },
+            { name1: "Viviana Marcela Chavez", name2: "Yadira Mosquera" },
+            { name1: "Estefania Garcia", name2: "Manuela Rico" },
+            { name1: "Natalia Naranja", name2: "Ivon Violet" },
+            { name1: "Jonatan Gaviria", name2: "Alejandra Mosquera" },
+            { name1: 'Mauricio "el crack" Rios', name2: "Leidy Marin" },
+            { name1: "Carlos Andres Tuta", name2: "Katherine Ramirez" },
+            { name1: "Favian Coava", name2: "Stefany Vanegas" },
+            { name1: "Joer Martinez", name2: "Valentina Gomez" },
+            { name1: "Tania Correa", name2: "Camilo Asprilla" }
+        ];
+
         const newTeams = teams.map((t, i) => ({
             ...t,
-            name1: `Jugador ${i * 2 + 1}`,
-            name2: `Jugador ${i * 2 + 2}`
+            name1: specificTeams[i]?.name1 || '',
+            name2: specificTeams[i]?.name2 || ''
         }));
         setTeams(newTeams);
     };
@@ -51,13 +65,13 @@ export default function SetupScreen({ onStartGame }) {
                         <div className="input-group">
                             <input
                                 type="text"
-                                placeholder="Integrante 1"
+                                placeholder={`Nombre Integrante ${index * 2 + 1}`}
                                 value={team.name1}
                                 onChange={(e) => handleInputChange(index, 'name1', e.target.value)}
                             />
                             <input
                                 type="text"
-                                placeholder="Integrante 2"
+                                placeholder={`Nombre Integrante ${index * 2 + 2}`}
                                 value={team.name2}
                                 onChange={(e) => handleInputChange(index, 'name2', e.target.value)}
                             />
@@ -68,7 +82,7 @@ export default function SetupScreen({ onStartGame }) {
 
             <div className="setup-actions">
                 <button className="btn-secondary" onClick={fillDummyData} style={{ marginRight: '10px' }}>
-                    (Demo) Llenar Auto
+                    Cargar Participantes
                 </button>
                 <button className="btn-primary" onClick={handleStart}>
                     Comenzar Juego
@@ -110,6 +124,10 @@ export default function SetupScreen({ onStartGame }) {
                     border: none;
                     background: rgba(0, 0, 0, 0.5);
                     color: white;
+                }
+                .input-group input::placeholder {
+                    color: rgba(255, 255, 255, 0.5);
+                    font-style: italic;
                 }
                 .setup-actions {
                     text-align: center;

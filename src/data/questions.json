@@ -1,388 +1,388 @@
 [
   {
     "id": 1,
-    "question": "¿Cuál es la capital de Colombia?",
+    "question": "¿Cuál de los siguientes NO es un componente del riesgo de auditoría?",
     "options": [
-      "Medellín",
-      "Bogotá",
-      "Cali",
-      "Barranquilla"
+      "Riesgo inherente.",
+      "Riesgo de control.",
+      "Riesgo de detección.",
+      "Riesgo financiero."
+    ],
+    "answer": 3
+  },
+  {
+    "id": 2,
+    "question": "Una entidad debe cambiar su moneda funcional cuando:",
+    "options": [
+      "La gerencia lo decida por conveniencia.",
+      "Cambie el entorno económico principal que determina la moneda funcional.",
+      "Cambien las tasas de cambio de manera significativa.",
+      "Exista inflación en el país."
     ],
     "answer": 1
   },
   {
-    "id": 2,
-    "question": "¿En qué año llegó el hombre a la luna?",
-    "options": [
-      "1969",
-      "1975",
-      "1960",
-      "1982"
-    ],
-    "answer": 0
-  },
-  {
     "id": 3,
-    "question": "¿Cuál es el río más largo del mundo?",
+    "question": "Una “opinión limpia” corresponde a:",
     "options": [
-      "Nilo",
-      "Misisipi",
-      "Amazonas",
-      "Yangtsé"
+      "Opinión adversa.",
+      "Opinión con salvedades.",
+      "Opinión no modificada",
+      "Abstención de opinión."
     ],
     "answer": 2
   },
   {
     "id": 4,
-    "question": "¿Quién escribió 'Cien años de soledad'?",
+    "question": "Si tenemos 30 dias de Cartera, 20 de Inventario y 15 de Proveedores, mi ciclo de efectivo es:",
     "options": [
-      "Jorge Luis Borges",
-      "Mario Vargas Llosa",
-      "Julio Cortázar",
-      "Gabriel García Márquez"
+      "65 dias",
+      "25 dias",
+      "35 dias",
+      "5 dias"
     ],
-    "answer": 3
+    "answer": 2
   },
   {
     "id": 5,
-    "question": "¿Cuál es el elemento químico con símbolo 'O'?",
+    "question": "cuando un regimen ordinario le vende a un RST, este debe a:",
     "options": [
-      "Oro",
-      "Osmio",
-      "Oxígeno",
-      "Oganesón"
+      "retenerle el 15% del IVA",
+      "autorretenerse por el ingreso",
+      "a y b son correctas",
+      "a y b son incorrectas"
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "id": 6,
-    "question": "¿Cuál es la montaña más alta del mundo?",
+    "question": "El dictamen/informe del auditor sirve principalmente para:",
     "options": [
-      "K2",
-      "Everest",
-      "Aconcagua",
-      "Kilimanjaro"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 7,
-    "question": "¿Quién pintó la Mona Lisa?",
-    "options": [
-      "Vincent van Gogh",
-      "Pablo Picasso",
-      "Leonardo da Vinci",
-      "Claude Monet"
+      "Calcular impuestos.",
+      "Decidir el salario del gerente.",
+      "Incrementar la confianza de los usuarios en la información financiera al expresar una opinión profesional.",
+      "Sustituir la responsabilidad de la administración."
     ],
     "answer": 2
   },
   {
-    "id": 8,
-    "question": "¿Cuál es el planeta más grande del sistema solar?",
+    "id": 7,
+    "question": "Si el costo de un inventario es mayor que su Valor Neto de Realización (VNR), la entidad debe:",
     "options": [
-      "Saturno",
-      "Júpiter",
-      "Urano",
-      "Neptuno"
+      "No hacer ningún ajuste hasta vender.",
+      "Reconocer un deterioro (rebaja) del inventario hasta el VNR y reconocer el gasto correspondiente.",
+      "Reclasificarlo como propiedad, planta y equipo.",
+      "Cambiar la política contable para mantener el costo."
     ],
     "answer": 1
   },
   {
-    "id": 9,
-    "question": "¿En qué continente se encuentra Egipto?",
+    "id": 8,
+    "question": "De los siguientes excesos, cual es el peor:",
     "options": [
-      "Asia",
-      "África",
-      "Europa",
-      "América"
+      "Exceso de Cartera",
+      "Exceso de Inventario",
+      "Exceso de Liquidez",
+      "Exceso de Activos Fijos"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "La depreciación (NIIF) busca:",
+    "options": [
+      "Reducir impuestos.",
+      "Distribuir sistemáticamente el importe depreciable de un activo a lo largo de su vida útil.",
+      "Aumentar los gastos del periodo para mejorar márgenes futuros.",
+      "Actualizar el activo a valor de mercado."
     ],
     "answer": 1
   },
   {
     "id": 10,
-    "question": "¿Cuál es el océano más grande del mundo?",
+    "question": "¿Qué entidades están obligadas por ley a tener Revisor Fiscal en Colombia?",
     "options": [
-      "Atlántico",
-      "Índico",
-      "Ártico",
-      "Pacífico"
+      "Todas las empresas sin excepción.",
+      "Solo las que cotizan en bolsa.",
+      "Las sociedades y entidades que la ley señale expresamente y, además, las sociedades comerciales que superen los topes de activos o ingresos previstos en la normativa aplicable.",
+      "Solo las entidades del sector público."
     ],
-    "answer": 3
+    "answer": 2
   },
   {
     "id": 11,
-    "question": "¿Quién es el autor de 'Don Quijote de la Mancha'?",
+    "question": "\"Rotación\" de cartera se mide en:",
     "options": [
-      "Miguel de Cervantes",
-      "Lope de Vega",
-      "Garcilaso de la Vega",
-      "Tirso de Molina"
+      "Tiempo",
+      "Dinero",
+      "Veces",
+      "Solo en días"
     ],
     "answer": 0
   },
   {
     "id": 12,
-    "question": "¿Cuál es el país más grande del mundo?",
+    "question": "Para un Banco, que utilidad utiliza para decidir si hay o no un posible crédito:",
     "options": [
-      "China",
-      "Estados Unidos",
-      "Rusia",
-      "Canadá"
+      "Utilidad bruta",
+      "Utilidad neta",
+      "Utilidad Operacional",
+      "Utilidad Antes de Impuestos"
     ],
     "answer": 2
   },
   {
     "id": 13,
-    "question": "¿Qué gas respiramos principalmente?",
+    "question": "El delito penal por omision del agente retenedor prescribe a:",
     "options": [
-      "Oxígeno",
-      "Nitrógeno",
-      "Dióxido de carbono",
-      "Hidrógeno"
+      "5 años",
+      "10 años",
+      "en el doble de la pena",
+      "nunca prescribe"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "id": 14,
-    "question": "¿En qué año comenzó la Segunda Guerra Mundial?",
+    "question": "Una sociedad recien constituida en su primer año de operacion declara el iva de forma",
     "options": [
-      "1914",
-      "1939",
-      "1945",
-      "1929"
+      "bimestral",
+      "cuatrimestral",
+      "anual",
+      "mensual"
     ],
-    "answer": 1
+    "answer": 0
   },
   {
     "id": 15,
-    "question": "¿Cuál es el animal terrestre más rápido?",
+    "question": "Cual de estos no es un tipo de pasivo:",
     "options": [
-      "León",
-      "Guepardo",
-      "Tigre",
-      "Antílope"
+      "Apalancamiento",
+      "Endeudamiento",
+      "Impositivo",
+      "Financiamiento"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "id": 16,
-    "question": "¿Quién descubrió América?",
+    "question": "Para un Socio es mejor:",
     "options": [
-      "Américo Vespucio",
-      "Cristóbal Colón",
-      "Fernando de Magallanes",
-      "Vasco da Gama"
+      "Utilidad bruta",
+      "Utilidad neta",
+      "Utilidad Operacional",
+      "Utilidad Antes de Impuestos"
     ],
     "answer": 1
   },
   {
     "id": 17,
-    "question": "¿Cuál es el metal más caro del mundo?",
+    "question": "Una perdida fiscal del año 2010 se puede compensar en:",
     "options": [
-      "Oro",
-      "Platino",
-      "Rodio",
-      "Paladio"
+      "maximo en los proximos 12 años",
+      "en los proximos 6 años",
+      "en cualquier tiempo",
+      "ninguna de las anteriores"
     ],
     "answer": 2
   },
   {
     "id": 18,
-    "question": "¿Quién formuló la teoría de la relatividad?",
+    "question": "A mayor riesgo mayor…:",
     "options": [
-      "Isaac Newton",
-      "Galileo Galilei",
-      "Nikola Tesla",
-      "Albert Einstein"
-    ],
-    "answer": 3
-  },
-  {
-    "id": 19,
-    "question": "¿Cuál es el país con más habitantes del mundo?",
-    "options": [
-      "India",
-      "China",
-      "Estados Unidos",
-      "Indonesia"
+      "Rentabilidad",
+      "inversión",
+      "Liquidez",
+      "Capital a distribuir"
     ],
     "answer": 0
   },
   {
-    "id": 20,
-    "question": "¿Qué instrumento mide la temperatura?",
+    "id": 19,
+    "question": "Cual es el pasivo mas riesgoso?",
     "options": [
-      "Barómetro",
-      "Termómetro",
-      "Anemómetro",
-      "Higrómetro"
+      "Apalancamiento",
+      "Endeudamiento",
+      "Laboral",
+      "Financiamiento"
     ],
-    "answer": 1
+    "answer": 3
+  },
+  {
+    "id": 20,
+    "question": "Cuales son los componentes de una cuota (de credito):",
+    "options": [
+      "Capital e Interes",
+      "Capital, Interes, Seguro y amortizacion",
+      "Capital, Interes y Seguro",
+      "Cuota, Capital, Interes y seguros"
+    ],
+    "answer": 2
   },
   {
     "id": 21,
-    "question": "¿Cuál es la capital de Francia?",
+    "question": "Frente a una resolucion sancion el contribuyente tiene el siguiente recurso:",
     "options": [
-      "Londres",
-      "Berlín",
-      "Madrid",
-      "París"
+      "Recurso de reconsideracion",
+      "Recursos de reposicion",
+      "Nulidad y restablecimiento del derecho",
+      "A y D son correctas"
     ],
     "answer": 3
   },
   {
     "id": 22,
-    "question": "¿Quién pintó 'La noche estrellada'?",
+    "question": "Una persona natural que recibe ingresos por dividendos debe realizar aportes a:",
     "options": [
-      "Vincent van Gogh",
-      "Salvador Dalí",
-      "Pablo Picasso",
-      "Rembrandt"
+      "Administradoras de la seguridad social",
+      "La cámara de comercio",
+      "La dian",
+      "UGPP"
     ],
     "answer": 0
   },
   {
     "id": 23,
-    "question": "¿Cuál es el hueso más largo del cuerpo humano?",
+    "question": "El intervalo defensivo se mide en?",
     "options": [
-      "Húmero",
-      "Fémur",
-      "Tibia",
-      "Radio"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 24,
-    "question": "¿En qué año cayó el Muro de Berlín?",
-    "options": [
-      "1989",
-      "1991",
-      "1985",
-      "1990"
+      "Tiempo",
+      "Cantidad de ebitdas",
+      "Vs el Sector",
+      "Unidades de Pesos COP"
     ],
     "answer": 0
   },
   {
-    "id": 25,
-    "question": "¿Cuál es la moneda de Japón?",
+    "id": 24,
+    "question": "La retención en la fuente que le aplican a una empresa, es un problema?",
     "options": [
-      "Yuan",
-      "Won",
-      "Yen",
-      "Dólar"
+      "Tributario para el cierre",
+      "De liquidez en el mes que se practica",
+      "De Rentabilidad final",
+      "Rotación de Cartera"
     ],
-    "answer": 2
+    "answer": 1
+  },
+  {
+    "id": 25,
+    "question": "Que es el WACC",
+    "options": [
+      "Es un indicador de deuda hacia los proveedores",
+      "Es el costo promedio ponderado de capital",
+      "Es un item que sirve para valores empresas bajo la modalidad de múltiplos de ebitda",
+      "Todas las anteriores"
+    ],
+    "answer": 1
   },
   {
     "id": 26,
-    "question": "¿Quién escribió 'Romeo y Julieta'?",
+    "question": "Cual es la formula del punto de equilibrio (cuanto debo de vender?)",
     "options": [
-      "Charles Dickens",
-      "William Shakespeare",
-      "Jane Austen",
-      "Mark Twain"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 27,
-    "question": "¿Cuál es el país más pequeño del mundo?",
-    "options": [
-      "Mónaco",
-      "Nauru",
-      "Vaticano",
-      "San Marino"
+      "Costos fijos / utilidad Bruta",
+      "Gastos fijos / Utilidad Bruta",
+      "Costos y Gastos Fijos / Margen de contribución",
+      "Costos y Gastos Variables / Margen de contribución"
     ],
     "answer": 2
   },
   {
-    "id": 28,
-    "question": "¿Qué planeta es conocido como el planeta rojo?",
+    "id": 27,
+    "question": "En el regimen simple de tributacion esta prohibido que los accionistas sean empleados de la misma sociedad",
     "options": [
-      "Venus",
-      "Marte",
-      "Júpiter",
-      "Mercurio"
+      "Verdadero, porque el SIMPLE no permite relaciones laborales con socios.",
+      "Falso, siempre que exista un contrato laboral real y se cumplan las obligaciones laborales.",
+      "Verdadero, salvo que el socio tenga menos del 10 % de participación.",
+      "Falso, únicamente cuando la empresa sea del sector servicios."
     ],
     "answer": 1
   },
   {
-    "id": 29,
-    "question": "¿Quién fue el primer presidente de los Estados Unidos?",
+    "id": 28,
+    "question": "Como se calcula la utilidad bruta:",
     "options": [
-      "Thomas Jefferson",
-      "Abraham Lincoln",
-      "George Washington",
-      "Benjamin Franklin"
+      "Ingresos - costos",
+      "Ingresos – costos – gastos administrativos",
+      "Ingresos – costos – gastos administrativos – gastos comerciales",
+      "Ingresos – costos – gastos administrativos – gastos comerciales - impuestos"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 29,
+    "question": "Que significa Ebitda:",
+    "options": [
+      "Ganancia neta de la empresa",
+      "Ganancia de los socios",
+      "Ganancias antes de impuestos, intereses, depreciación y amortización",
+      "Ganancia real de la compañía"
     ],
     "answer": 2
   },
   {
     "id": 30,
-    "question": "¿Cuál es el idioma más hablado del mundo?",
+    "question": "Como se mide la inflación:",
     "options": [
-      "Inglés",
-      "Mandarín",
-      "Español",
-      "Hindú"
+      "Variación del desempleo",
+      "Variación del dólar vs el COP",
+      "Variación de salario minimo",
+      "Variación de los indices de precios del consumidor (IPC)"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 31,
-    "question": "¿Qué órgano del cuerpo humano produce insulina?",
+    "question": "Si tengo en la cuenta 400.000.000, y el capital de trabajo por mes son 250.000.000 tengo:",
     "options": [
-      "Hígado",
-      "Páncreas",
-      "Riñón",
-      "Estómago"
-    ],
-    "answer": 1
-  },
-  {
-    "id": 32,
-    "question": "¿Cuál es la capital de Italia?",
-    "options": [
-      "Roma",
-      "Milán",
-      "Nápoles",
-      "Venecia"
+      "150.000.000 de capital ocioso",
+      "150.000.000 susceptible a distribución",
+      "150.000.000 de ahorro",
+      "Todas las anteriores"
     ],
     "answer": 0
   },
   {
-    "id": 33,
-    "question": "¿Quién es el dios del trueno en la mitología nórdica?",
+    "id": 32,
+    "question": "El descuento tributario del art 258-1 se puede tomar en",
     "options": [
-      "Odín",
-      "Loki",
-      "Thor",
-      "Freya"
+      "solo en año de adquisicion del activo",
+      "en al año de adquisicion del activo o en los proximo 4 años",
+      "en cualqueir tiempo",
+      "ninguna de las anteriores"
     ],
     "answer": 2
+  },
+  {
+    "id": 33,
+    "question": "cuando una declaracion tributaria queda ineficaz por falta de firmas, la sancion que debe liquidarse es",
+    "options": [
+      "5% por mes o fraccion sobre el impuesto a cargo",
+      "2% de la sancion del extemporaneidad del art 641 del et",
+      "10% por mes o fraccion de mes sobre el impuesto a cargo",
+      "no tiene sancion"
+    ],
+    "answer": 1
   },
   {
     "id": 34,
-    "question": "¿Cuál es el componente principal del sol?",
+    "question": "En el impuesto de industria y comercio la territorialidad en la operacion de arrendamientos de bienes inmueble se da en:",
     "options": [
-      "Helio",
-      "Oxígeno",
-      "Hidrógeno",
-      "Carbono"
+      "el lugar donde estan ubicados los. Inmubles",
+      "en el lugar donde se firma el contrato de arrendamiento",
+      "en el lugar donde reside el arrendador",
+      "ninguna de las anteriores"
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "id": 35,
-    "question": "¿En qué país se encuentran las ruinas de Machu Picchu?",
+    "question": "para que un gasto por concepto de arrendamientos cobrado por una persona natural sea deducible se requiere",
     "options": [
-      "Bolivia",
-      "Perú",
-      "Ecuador",
-      "Chile"
+      "que se le practique la retencion correspondiente, se valide el pago de seguridad social y se realice el documento soporte",
+      "que se practique la retencion en la fuente y se realice el documento soporte",
+      "que se le practique retencion en la fuente",
+      "ninguna de las anteriores"
     ],
-    "answer": 1
+    "answer": 2
   },
   {
     "id": 36,
