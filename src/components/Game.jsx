@@ -32,11 +32,16 @@ export default function Game() {
     };
 
     const handleStartGame = (registeredTeams) => {
-        // Initialize teams with score 0 and failed questions
+        // Initialize teams with score 0, failed questions, and available lifelines
         const initializedTeams = registeredTeams.map(t => ({
             ...t,
             money: 0,
-            failedQuestions: []
+            failedQuestions: [],
+            lifelines: {
+                fiftyFifty: true,
+                audience: true,
+                friend: true
+            }
         }));
 
         setTeams(initializedTeams);
@@ -56,6 +61,12 @@ export default function Game() {
         setTeamQuestionIndex(0);
         setQuestionKey(prev => prev + 1);
         setGameState('playing');
+    };
+
+    const handleUseLifeline = (lifelineType) => {
+        const updatedTeams = [...teams];
+        updatedTeams[currentTeamIndex].lifelines[lifelineType] = false;
+        setTeams(updatedTeams);
     };
 
     const handleAnswer = (selectedIndex, isTimeOut = false) => {
@@ -280,6 +291,8 @@ export default function Game() {
                 question={currentQuestion}
                 onAnswer={handleAnswer}
                 timeLimit={60} // 60 seconds per question
+                lifelines={currentTeam.lifelines}
+                onUseLifeline={handleUseLifeline}
             />
         </div>
     );
