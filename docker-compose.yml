@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  millonario-app:
+    build: .
+    container_name: millonario-gp-container
+    restart: always
+    ports:
+      
+      - "8085:80"
+    networks:
+      - millonario-network
+
+networks:
+
+  millonario-network:
+    driver: bridge
