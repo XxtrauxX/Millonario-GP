@@ -386,167 +386,167 @@
   },
   {
     "id": 36,
-    "question": "¿Quién pintó 'El Guernica'?",
+    "question": "¿Cuál de estas afirmaciones es la mejor opción?",
     "options": [
-      "Salvador Dalí",
-      "Joan Miró",
-      "Pablo Picasso",
-      "Diego Velázquez"
+      "Es mejor que el WACC sea mayor cada año",
+      "Es mejor que el WACC sea inferior cada año",
+      "Es mejor que el WACC sea igual al del año pasado",
+      "Es mejor que el WACC sea superior a la del promedio de empresas del mismo sector"
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "id": 37,
-    "question": "¿Cuál es la capital de España?",
+    "question": "Un gasto incurrido en el exterior por concepto de hoteles y restaurantes es deducible siempre que se cumpla la siguiente condición",
     "options": [
-      "Barcelona",
-      "Valencia",
-      "Madrid",
-      "Sevilla"
+      "Que se le practique retención en la fuente",
+      "Que se le aplique el límite del art 122 del ET",
+      "No es deducible de ninguna manera",
+      "A y B son correctas"
     ],
-    "answer": 2
+    "answer": 3
   },
   {
     "id": 38,
-    "question": "¿Qué científico propuso las tres leyes del movimiento?",
+    "question": "Un saldo a favor en renta del año 2020 que no se solicitó en devolución o compensación se puede recuperar",
     "options": [
-      "Isaac Newton",
-      "Albert Einstein",
-      "Galileo Galilei",
-      "Nikola Tesla"
+      "No, porque al no solicitarse oportunamente se pierde automáticamente.",
+      "Sí, puede imputarse en declaraciones posteriores dentro del término legal.",
+      "Solo si la DIAN lo autoriza mediante fiscalización.",
+      "Únicamente si el contribuyente pertenece al Régimen Simple."
+    ],
+    "answer": 1
+  },
+  {
+    "id": 39,
+    "question": "En un contrato de mandato, el mandante para efectos de IVA toma las características del:",
+    "options": [
+      "Mandante",
+      "Mandatario",
+      "Contratista",
+      "Proveedor"
     ],
     "answer": 0
   },
   {
-    "id": 39,
-    "question": "¿Cuál es el río más largo de América del Sur?",
-    "options": [
-      "Orinoco",
-      "Paraná",
-      "Amazonas",
-      "Magdalena"
-    ],
-    "answer": 2
-  },
-  {
     "id": 40,
-    "question": "¿Quién interpretó a Jack Dawson en Titanic?",
+    "question": "En un contrato de colaboración empresarial como el contrato de cuentas en participación, el socio gestor debe realizar los documentos soportes de las operaciones",
     "options": [
-      "Brad Pitt",
-      "Tom Cruise",
-      "Leonardo DiCaprio",
-      "Johnny Depp"
+      "Verdadero, porque el socio gestor es quien ejecuta la operación frente a terceros y lleva el control del negocio.",
+      "Falso, porque cada socio debe emitir sus propios documentos soporte.",
+      "Verdadero, solo si el contrato está registrado en Cámara de Comercio.",
+      "Falso, porque los documentos deben ser emitidos por el socio oculto."
     ],
-    "answer": 2
+    "answer": 0
   },
   {
     "id": 41,
-    "question": "¿Cuál es el símbolo químico del oro?",
+    "question": "Una sanción por extemporaneidad genera intereses de mora",
     "options": [
-      "Ag",
-      "Au",
-      "Fe",
-      "Cu"
+      "Verdadero, de acuerdo al ART 605 del ET",
+      "Falso, una sanción no genera mora",
+      "Verdadero, a partir de la misma cantidad de periodos no declarados",
+      "Falso, de acuerdo al ART 605 del ET no genera mora"
     ],
     "answer": 1
   },
   {
     "id": 42,
-    "question": "¿En qué año se firmó la independencia de Colombia?",
+    "question": "Cuando presento la retención en la fuente y el valor a pagar es de $ 100.000 el termino que tengo para pagarla sin que quede ineficaz es de",
     "options": [
-      "1810",
-      "1819",
-      "1821",
-      "1812"
+      "Dos meses",
+      "6 meses",
+      "Un año",
+      "Nunca queda ineficaz"
     ],
-    "answer": 0
+    "answer": 3
   },
   {
     "id": 43,
-    "question": "¿Cuál es la ciudad más poblada del mundo?",
+    "question": "Una sociedad cumplió topes para tener revisor fiscal en el año 2025, por tal motivo la declaración de enero del 2026 de retención en la fuente debe estar firmada por el revisor fiscal, de no ser así la declaración queda ineficaz",
     "options": [
-      "Tokio",
-      "Delhi",
-      "Shanghái",
-      "São Paulo"
+      "Falso, porque la firma del revisor fiscal solo es obligatoria en la declaración de renta.",
+      "Falso, porque basta con la firma del representante legal.",
+      "Verdadero, porque al estar obligada a tener revisor fiscal, su firma es requisito de validez de la declaración.",
+      "Verdadero, pero solo aplica para grandes contribuyentes."
     ],
-    "answer": 0
+    "answer": 2
   },
   {
     "id": 44,
-    "question": "¿Quién escribió 'Orgullo y Prejuicio'?",
+    "question": "Si tengo una compra 10.000 USD con una TRM de 4.000, y otra de 90.000 USD a una TRM de 5.000, mi costo promedio ponderado en pesos COP es de?",
     "options": [
-      "Emily Brontë",
-      "Jane Austen",
-      "Virginia Woolf",
-      "Charlotte Brontë"
+      "4.500",
+      "4.900",
+      "4.100",
+      "4.950"
     ],
     "answer": 1
   },
   {
     "id": 45,
-    "question": "¿Cuál es el planeta más cercano al sol?",
+    "question": "Cuanto tiempo tengo para corregir una declaración donde se pretende aumentar un saldo a favor",
     "options": [
-      "Venus",
-      "Tierra",
-      "Marte",
-      "Mercurio"
+      "Un año",
+      "3 años",
+      "6 meses",
+      "Puedo corregir en cualquier termino"
     ],
-    "answer": 3
+    "answer": 0
   },
   {
     "id": 46,
-    "question": "¿Qué país tiene forma de bota?",
+    "question": "Una sociedad realizó una Fra de venta el 31 de diciembre del 2025, pero el servicio no lo prestó hasta enero del 2026, de acuerdo al art 28 del ET el ingreso se debe reconocer en",
     "options": [
-      "Grecia",
-      "Portugal",
-      "Italia",
-      "España"
+      "Diciembre de 2025",
+      "Enero del 2026",
+      "En cualquier mes",
+      "Ninguna de las anteriores"
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "id": 47,
-    "question": "¿Quién fue el vocalista de la banda Queen?",
+    "question": "En el régimen simple de tributación está prohibido que los accionistas sean empleados de la misma sociedad",
     "options": [
-      "David Bowie",
-      "Freddie Mercury",
-      "Mick Jagger",
-      "Elton John"
+      "Verdadero, porque el SIMPLE no permite relaciones laborales con socios.",
+      "Falso, siempre que exista un contrato laboral real y se cumplan las obligaciones laborales.",
+      "Verdadero, salvo que el socio tenga menos del 10 % de participación.",
+      "Falso, únicamente cuando la empresa sea del sector servicios."
     ],
     "answer": 1
   },
   {
     "id": 48,
-    "question": "¿Cuál es la capital de Alemania?",
+    "question": "Ebitda es un indicador de:",
     "options": [
-      "Múnich",
-      "Hamburgo",
-      "Fráncfort",
-      "Berlín"
+      "Liquidez",
+      "Rentabilidad",
+      "Actividad",
+      "Generación de valor"
     ],
-    "answer": 3
+    "answer": 1
   },
   {
     "id": 49,
-    "question": "¿Qué vitamina produce el cuerpo con la luz solar?",
+    "question": "La materialidad (importancia relativa) se usa principalmente para:",
     "options": [
-      "Vitamina A",
-      "Vitamina C",
-      "Vitamina D",
-      "Vitamina B12"
+      "Calcular impuestos y sanciones.",
+      "Definir el alcance, naturaleza y oportunidad de los procedimientos de auditoría, y evaluar el efecto de incorrecciones identificadas.",
+      "Determinar el valor de mercado de la empresa.",
+      "Medir la rentabilidad del negocio."
     ],
-    "answer": 2
+    "answer": 1
   },
   {
     "id": 50,
-    "question": "¿Cuál es el deporte más popular del mundo?",
+    "question": "¿Qué norma (NIA) trata la planeación de la auditoría de estados financieros?",
     "options": [
-      "Baloncesto",
-      "Tenis",
-      "Fútbol",
-      "Críquet"
+      "NIA 200",
+      "NIA 300",
+      "NIA 315",
+      "NIA 500"
     ],
-    "answer": 2
+    "answer": 1
   }
 ]
