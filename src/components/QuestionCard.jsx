@@ -87,6 +87,11 @@ export default function QuestionCard({ question, onAnswer, timeLimit = 60, lifel
         setActiveModal(null);
     };
 
+    const handleManualPause = () => {
+        if (activeModal) return; // Don't override modal pause
+        setIsPaused(!isPaused);
+    };
+
     const getOptionClass = (index) => {
         let baseClass = "answer-option-shape";
 
@@ -166,9 +171,30 @@ export default function QuestionCard({ question, onAnswer, timeLimit = 60, lifel
                     textAlign: 'center',
                     fontSize: '2rem',
                     fontWeight: 'bold',
-                    textShadow: '0 0 10px rgba(0,0,0,0.8)'
+                    textShadow: '0 0 10px rgba(0,0,0,0.8)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '1rem'
                 }}>
-                    ⏱ {timeLeft}s {isPaused && <span style={{ color: '#ffdd00', fontSize: '1rem' }}>(PAUSADO)</span>}
+                    <span>⏱ {timeLeft}s</span>
+                    <button
+                        onClick={handleManualPause}
+                        disabled={!!activeModal}
+                        style={{
+                            background: 'none',
+                            border: '1px solid #fff',
+                            color: '#fff',
+                            borderRadius: '5px',
+                            cursor: 'pointer',
+                            padding: '0.2rem 0.5rem',
+                            fontSize: '0.8rem',
+                            opacity: activeModal ? 0.5 : 1
+                        }}
+                    >
+                        {isPaused && !activeModal ? '▶ REANUDAR' : '⏸ PAUSA'}
+                    </button>
+                    {isPaused && <span style={{ color: '#ffdd00', fontSize: '1rem' }}>(PAUSADO)</span>}
                 </div>
                 <div className="timer-progress-bar">
                     <div
