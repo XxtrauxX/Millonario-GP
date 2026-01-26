@@ -76,33 +76,76 @@ body {
   justify-content: center;
 }
 
-.lifelines {
+/* Lifelines */
+.lifelines-container {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
-.lifeline-unavailable {
-  width: 60px;
-  height: 40px;
-  border: 2px solid #555;
+.btn-lifeline {
+  width: 70px;
+  height: 45px;
   border-radius: 50%;
-  /* Oval like layout */
+  border: 2px solid var(--mil-gold);
+  background: radial-gradient(circle at 30% 30%, #2a4a8a, #020b20);
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  transition: transform 0.1s, box-shadow 0.1s;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #555;
-  font-weight: bold;
   position: relative;
+  overflow: hidden;
 }
 
-.lifeline-unavailable::after {
-  content: '❌';
-  position: absolute;
-  font-size: 1.5rem;
-  color: #f00;
-  opacity: 0.5;
+.btn-lifeline svg {
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.8));
 }
+
+.btn-lifeline:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--mil-blue-glow);
+  border-color: #fff;
+}
+
+.btn-lifeline:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.btn-lifeline.used {
+  filter: grayscale(100%);
+  border-color: #555;
+  background: #222;
+}
+
+.btn-lifeline.used::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: #f00;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0 0 5px #f00;
+}
+
+.btn-lifeline.used::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background: #f00;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  box-shadow: 0 0 5px #f00;
+}
+
 
 /* Question Area */
 .question-area {

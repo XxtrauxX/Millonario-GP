@@ -132,25 +132,31 @@ export default function QuestionCard({ question, onAnswer, timeLimit = 60, lifel
                     className={`btn-lifeline ${!lifelines?.fiftyFifty ? 'used' : ''}`}
                     onClick={handleUse5050}
                     disabled={!lifelines?.fiftyFifty || revealed}
-                    title="50/50: Elimina 2 respuestas incorrectas"
+                    title="50/50"
                 >
-                    50:50
+                    <svg viewBox="0 0 100 60" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <text x="50" y="42" fontSize="38" fontWeight="bold" fill="#d4af37" textAnchor="middle" fontFamily="Arial, sans-serif">50:50</text>
+                    </svg>
                 </button>
                 <button
                     className={`btn-lifeline ${!lifelines?.audience ? 'used' : ''}`}
                     onClick={handleAudience}
                     disabled={!lifelines?.audience || revealed}
-                    title="Ayuda del Público: Pausa el juego"
+                    title="Ayuda del Público"
                 >
-                    👥 Público
+                    <svg viewBox="0 0 24 24" width="70%" height="70%" fill="#d4af37" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
                 </button>
                 <button
                     className={`btn-lifeline ${!lifelines?.friend ? 'used' : ''}`}
                     onClick={handleFriend}
                     disabled={!lifelines?.friend || revealed}
-                    title="Llamada a un Amigo: Pausa el juego"
+                    title="Llamada a un Amigo"
                 >
-                    📞 Amigo
+                    <svg viewBox="0 0 24 24" width="65%" height="65%" fill="#d4af37" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-3.23-1.61-5.81-4.19-7.41-7.41l2.2-2.2c.27-.27.35-.66.24-1.01-.36-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 2 3 2.45 3 3c0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-2.62c0-.55-.45-1-.99-1z" />
+                    </svg>
                 </button>
             </div>
 
