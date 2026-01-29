@@ -100,6 +100,9 @@ export default function Game() {
         setTeams(updatedTeams);
 
         // Delay for visual feedback before moving on
+
+        const delay = isTimeOut ? 4000 : 1500;
+
         setTimeout(() => {
             if (teamQuestionIndex < QUESTIONS_PER_TEAM - 1) {
                 // Next question for same team
@@ -115,7 +118,7 @@ export default function Game() {
                     setGameState('report');
                 }
             }
-        }, 1500);
+        }, delay);
     };
 
     // Audio State
