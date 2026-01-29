@@ -101,7 +101,7 @@ export default function Game() {
 
         // Delay for visual feedback before moving on
 
-        const delay = isTimeOut ? 4000 : 1500;
+        const delay = 4000;
 
         setTimeout(() => {
             if (teamQuestionIndex < QUESTIONS_PER_TEAM - 1) {
