@@ -1,194 +1,21 @@
 import { useState, useEffect } from 'react';
-import questionsData from '../data/questions.json';
 import QuestionCard from './QuestionCard';
 import SetupScreen from './SetupScreen';
 import ReportScreen from './ReportScreen';
+import { MONEY_PER_QUESTION, SECONDS_PER_QUESTION, CARGO_LABELS } from '../data/assignQuestions';
 
-const QUESTIONS_PER_TEAM = 5;
-const WIN_AMOUNT = 2000;
-const MAX_MONEY = 10000;
+const FEEDBACK_DELAY = 4000;
 
-export default function Game() {
-    // Game States: 'setup', 'playing', 'report'
-    const [gameState, setGameState] = useState('setup');
-    const [teams, setTeams] = useState([]);
-    const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
-    const [teamQuestionIndex, setTeamQuestionIndex] = useState(0);
-    const [questionsPool, setQuestionsPool] = useState([]);
-    const [questionKey, setQuestionKey] = useState(0); // Force re-render of QuestionCard
-
-    // Shuffle questions on mount (not strictly necessary here as we do it on start, but good practice)
-    useEffect(() => {
-        // ...
-    }, []);
-
-    const shuffleArray = (array) => {
-        const newArray = [...array];
-        for (let i = newArray.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-        }
-        return newArray;
-    };
-
-    const handleStartGame = (registeredTeams) => {
-        // Initialize teams with score 0, failed questions, and available lifelines
-        const initializedTeams = registeredTeams.map(t => ({
-            ...t,
-            money: 0,
-            failedQuestions: [],
-            lifelines: {
-                fiftyFifty: true,
-                audience: true,
-                friend: true
-            }
-        }));
-
-        setTeams(initializedTeams);
-
-        // We need 10 teams * 5 questions = 50 questions minimum.
-        // Disable shuffling to ensure specific questions for specific teams (e.g. Q1-5 for Team 1)
-        const questions = [...questionsData];
-        setQuestionsPool(questions);
-
-        setGameState('playing');
-        setCurrentTeamIndex(0);
-        setTeamQuestionIndex(0);
-    };
-
-    const handleNextTeam = () => {
-        setCurrentTeamIndex(prev => prev + 1);
-        setTeamQuestionIndex(0);
-        setQuestionKey(prev => prev + 1);
-        setGameState('playing');
-    };
-
-    const handleUseLifeline = (lifelineType) => {
-        const updatedTeams = [...teams];
-        updatedTeams[currentTeamIndex].lifelines[lifelineType] = false;
-        setTeams(updatedTeams);
-    };
-
-    const handleAnswer = (selectedIndex, isTimeOut = false) => {
-        const currentTeam = teams[currentTeamIndex];
-        // Calculate global question index: (currentTeamIndex * 5) + teamQuestionIndex
-        const globalQuestionIndex = (currentTeamIndex * QUESTIONS_PER_TEAM) + teamQuestionIndex;
-        const currentQuestion = questionsPool[globalQuestionIndex];
-
-        let isCorrect = false;
-
-        // Logic
-        if (!isTimeOut && selectedIndex === currentQuestion.answer) {
-            isCorrect = true;
-        }
-
-        const updatedTeams = [...teams];
-        if (isCorrect) {
-            // Add money, capped at MAX_MONEY (though 5 * 2000 = 10000 exactly)
-            updatedTeams[currentTeamIndex].money = Math.min(updatedTeams[currentTeamIndex].money + WIN_AMOUNT, MAX_MONEY);
-            playSound('correct');
-        } else {
-            // Track failure
-            updatedTeams[currentTeamIndex].failedQuestions.push({
-                question: currentQuestion.question,
-                correctAnswer: currentQuestion.options[currentQuestion.answer],
-                userAnswer: isTimeOut ? 'Tiempo Agotado' : currentQuestion.options[selectedIndex]
-            });
-            playSound('wrong');
-        }
-
-        setTeams(updatedTeams);
-
-        // Delay for visual feedback before moving on
-
-        const delay = 4000;
-
-        setTimeout(() => {
-            if (teamQuestionIndex < QUESTIONS_PER_TEAM - 1) {
-                // Next question for same team
-                setTeamQuestionIndex(prev => prev + 1);
-                setQuestionKey(prev => prev + 1);
-            } else {
-                // Team finished their turn
-                if (currentTeamIndex < teams.length - 1) {
-                    // Go to intermission before next team
-                    setGameState('intermission');
-                } else {
-                    // All teams finished
-                    setGameState('report');
-                }
-            }
-        }, delay);
-    };
-
-    // Audio State
-    const [isAudioEnabled, setIsAudioEnabled] = useState(false);
-
-    // Audio System
-    const playSound = (type, loop = false) => {
-        if (!isAudioEnabled) return;
-
-        const sounds = {
-            'intro': '/sounds/main_theme.mp3',
-            'thinking': '/sounds/thinking.mp3',
-            'correct': '/sounds/correct.mp3',
-            'wrong': '/sounds/wrong.mp3',
-            'win': '/sounds/win.mp3',
-            'intermission': '/sounds/intermission.mp3'
-        };
-
-        const path = sounds[type];
-        if (!path) return;
-
-        const audio = new Audio(path);
-        audio.loop = loop;
-
-        // Volume adjustments
-        // Volume adjustments
-        // if (type === 'thinking') audio.volume = 0.5;
-
-        // Store reference to bgm if looping (basic implementation)
-        // Note: For a robust system we'd track active audio instances, but this fits the current scope
-
-        audio.play().catch(e => console.log("Audio play failed:", e));
-        return audio;
-    };
-
-    // Toggle Audio
-    const toggleAudio = () => {
-        setIsAudioEnabled(prev => !prev);
-    };
-
-    // Background Music State
-    useEffect(() => {
-        let bgm = null;
-
-        if (isAudioEnabled) {
-            if (gameState === 'setup') {
-                bgm = playSound('intro', true);
-            } else if (gameState === 'playing') {
-                bgm = playSound('thinking', true); // Use tension music for questions
-            }
-        }
-
-        return () => {
-            if (bgm) {
-                bgm.pause();
-                bgm.currentTime = 0;
-            }
-        };
-    }, [gameState, isAudioEnabled]);
-
-    // UI for Audio Toggle
-    const AudioToggle = () => (
+function AudioToggle({ enabled, onToggle }) {
+    return (
         <button
-            onClick={toggleAudio}
+            onClick={onToggle}
             style={{
                 position: 'fixed',
                 top: '20px',
                 right: '20px',
                 zIndex: 1000,
-                background: isAudioEnabled ? '#0f0' : '#f00',
+                background: enabled ? '#0f0' : '#f00',
                 border: 'none',
                 borderRadius: '50%',
                 width: '40px',
@@ -200,17 +27,145 @@ export default function Game() {
                 boxShadow: '0 2px 10px rgba(0,0,0,0.5)',
                 fontSize: '20px'
             }}
-            title={isAudioEnabled ? "Desactivar Audio" : "Activar Audio"}
+            title={enabled ? 'Desactivar Audio' : 'Activar Audio'}
         >
-            {isAudioEnabled ? '🎵' : '🔇'}
+            {enabled ? '🎵' : '🔇'}
         </button>
     );
+}
 
-    // Renders
+export default function Game() {
+    // 'setup' | 'playing' | 'intermission' | 'report'
+    const [gameState, setGameState] = useState('setup');
+    const [players, setPlayers] = useState([]);
+    const [currentPlayerIndex, setCurrentPlayerIndex] = useState(0);
+    const [questionIndex, setQuestionIndex] = useState(0);
+    const [questionKey, setQuestionKey] = useState(0);
+    const [isAudioEnabled, setIsAudioEnabled] = useState(false);
+
+    // El roster llega con su kit y sus preguntas ya asignadas.
+    const handleStartGame = (roster) => {
+        setPlayers(
+            roster.map((person) => ({
+                ...person,
+                money: 0,
+                answers: [],
+                lifelines: { fiftyFifty: true, audience: true, friend: true }
+            }))
+        );
+        setCurrentPlayerIndex(0);
+        setQuestionIndex(0);
+        setQuestionKey((k) => k + 1);
+        setGameState('playing');
+    };
+
+    const handleNextPlayer = () => {
+        setCurrentPlayerIndex((prev) => prev + 1);
+        setQuestionIndex(0);
+        setQuestionKey((k) => k + 1);
+        setGameState('playing');
+    };
+
+    const handleUseLifeline = (lifelineType) => {
+        setPlayers((prev) =>
+            prev.map((player, idx) =>
+                idx === currentPlayerIndex
+                    ? { ...player, lifelines: { ...player.lifelines, [lifelineType]: false } }
+                    : player
+            )
+        );
+    };
+
+    const handleAnswer = (selectedIndex, isTimeOut = false) => {
+        const question = players[currentPlayerIndex].questions[questionIndex];
+        const isCorrect = !isTimeOut && selectedIndex === question.answer;
+
+        const record = {
+            questionId: question.id,
+            question: question.question,
+            bank: question.bank,
+            tema: question.tema,
+            nivel: question.nivel,
+            reference: question.reference,
+            correctAnswer: question.options[question.answer],
+            userAnswer: isTimeOut ? 'Tiempo agotado' : question.options[selectedIndex],
+            isCorrect,
+            timedOut: isTimeOut
+        };
+
+        setPlayers((prev) =>
+            prev.map((player, idx) =>
+                idx === currentPlayerIndex
+                    ? {
+                          ...player,
+                          money: player.money + (isCorrect ? MONEY_PER_QUESTION : 0),
+                          answers: [...player.answers, record]
+                      }
+                    : player
+            )
+        );
+        playSound(isCorrect ? 'correct' : 'wrong');
+
+        const isLastQuestion = questionIndex >= players[currentPlayerIndex].questions.length - 1;
+        const isLastPlayer = currentPlayerIndex >= players.length - 1;
+
+        setTimeout(() => {
+            if (!isLastQuestion) {
+                setQuestionIndex((prev) => prev + 1);
+                setQuestionKey((k) => k + 1);
+            } else {
+                setGameState(isLastPlayer ? 'report' : 'intermission');
+            }
+        }, FEEDBACK_DELAY);
+    };
+
+    const playSound = (type, loop = false) => {
+        if (!isAudioEnabled) return;
+
+        const sounds = {
+            intro: '/sounds/main_theme.mp3',
+            thinking: '/sounds/thinking.mp3',
+            correct: '/sounds/correct.mp3',
+            wrong: '/sounds/wrong.mp3',
+            win: '/sounds/win.mp3',
+            intermission: '/sounds/intermission.mp3'
+        };
+
+        const path = sounds[type];
+        if (!path) return;
+
+        const audio = new Audio(path);
+        audio.loop = loop;
+        audio.play().catch((e) => console.log('Audio play failed:', e));
+        return audio;
+    };
+
+    const toggleAudio = () => setIsAudioEnabled((prev) => !prev);
+    const audioToggle = <AudioToggle enabled={isAudioEnabled} onToggle={toggleAudio} />;
+
+    useEffect(() => {
+        let bgm = null;
+
+        if (isAudioEnabled) {
+            if (gameState === 'setup') {
+                bgm = playSound('intro', true);
+            } else if (gameState === 'playing') {
+                bgm = playSound('thinking', true);
+            }
+        }
+
+        return () => {
+            if (bgm) {
+                bgm.pause();
+                bgm.currentTime = 0;
+            }
+        };
+    }, [gameState, isAudioEnabled]);
+
     if (gameState === 'setup') {
         return (
             <>
-                <AudioToggle />
+                {audioToggle}
                 <SetupScreen onStartGame={handleStartGame} />
             </>
         );
@@ -219,38 +174,48 @@ export default function Game() {
     if (gameState === 'report') {
         return (
             <>
-                <AudioToggle />
-                <ReportScreen teams={teams} />
+                {audioToggle}
+                <ReportScreen players={players} />
             </>
         );
     }
 
     if (gameState === 'intermission') {
-        const finishedTeam = teams[currentTeamIndex];
-        const nextTeam = teams[currentTeamIndex + 1];
+        const finished = players[currentPlayerIndex];
+        const next = players[currentPlayerIndex + 1];
+        const hits = finished.answers.filter((a) => a.isCorrect).length;
 
         return (
             <div className="game-container">
-                <AudioToggle />
+                {audioToggle}
                 <div className="main-stage">
                     <div className="question-box-shape summary-screen">
-                        <h2 className="text-gradient">¡Turno Finalizado!</h2>
+                        <h2 className="text-gradient">¡Turno finalizado!</h2>
                         <div style={{ margin: '2rem 0' }}>
                             <p style={{ fontSize: '1.5rem' }}>
-                                Equipo {finishedTeam.id + 1}: <span style={{ color: '#ffd700' }}>{finishedTeam.name1} & {finishedTeam.name2}</span>
+                                <span style={{ color: '#ffd700' }}>{finished.name}</span>
+                            </p>
+                            <p style={{ color: '#aaa', marginTop: '0.25rem' }}>
+                                {CARGO_LABELS[finished.cargo]}
                             </p>
                             <p style={{ fontSize: '1.2rem', marginTop: '1rem' }}>
-                                Dinero Acumulado: <span style={{ color: '#0f0' }}>${finishedTeam.money.toLocaleString()}</span>
+                                Acertó <span style={{ color: '#0f0' }}>{hits}</span> de{' '}
+                                {finished.answers.length}
+                            </p>
+                            <p style={{ fontSize: '1.2rem', marginTop: '0.5rem' }}>
+                                Dinero acumulado:{' '}
+                                <span style={{ color: '#0f0' }}>
+                                    ${finished.money.toLocaleString('es-CO')}
+                                </span>
                             </p>
                         </div>
 
                         <div style={{ borderTop: '1px solid #555', padding: '2rem 0', marginTop: '2rem' }}>
                             <p style={{ marginBottom: '1rem', color: '#aaa' }}>Siguiente en participar:</p>
-                            <h3 style={{ fontSize: '2rem', margin: '0 0 2rem 0' }}>
-                                Equipo {nextTeam.id + 1}: {nextTeam.name1} & {nextTeam.name2}
-                            </h3>
-                            <button className="btn-primary" onClick={handleNextTeam}>
-                                Iniciar Turno del Siguiente Equipo
+                            <h3 style={{ fontSize: '2rem', margin: '0 0 0.25rem 0' }}>{next.name}</h3>
+                            <p style={{ color: '#aaa', marginBottom: '2rem' }}>{CARGO_LABELS[next.cargo]}</p>
+                            <button className="btn-primary" onClick={handleNextPlayer}>
+                                Iniciar turno de {next.name.split(' ')[0]}
                             </button>
                         </div>
                     </div>
@@ -259,42 +224,45 @@ export default function Game() {
         );
     }
 
-    // Playing State
-    const currentTeam = teams[currentTeamIndex];
-    const globalQIdx = (currentTeamIndex * QUESTIONS_PER_TEAM) + teamQuestionIndex;
-    const currentQuestion = questionsPool[globalQIdx];
+    const currentPlayer = players[currentPlayerIndex];
+    const currentQuestion = currentPlayer.questions[questionIndex];
 
-    // Safety check if we run out of questions (though we shouldn't with 50+)
     if (!currentQuestion) {
-        return <div className="game-container"><h1>Error: No hay suficientes preguntas para todos los equipos.</h1></div>;
+        return (
+            <div className="game-container">
+                <h1>Error: no se pudo asignar la pregunta {questionIndex + 1} de {currentPlayer.name}.</h1>
+            </div>
+        );
     }
 
     return (
         <div className="game-container">
-            <AudioToggle />
+            {audioToggle}
             <div className="header-info">
                 <div className="logo-small">Torneo Millonario</div>
                 <div className="team-info-display">
-                    <span className="team-label">Equipo {currentTeam.id + 1}:</span>
-                    <span className="team-names">{currentTeam.name1} & {currentTeam.name2}</span>
+                    <span className="team-label">
+                        Jugador {currentPlayerIndex + 1}/{players.length}:
+                    </span>
+                    <span className="team-names">{currentPlayer.name}</span>
                 </div>
                 <div className="money-display current-money">
-                    ${currentTeam.money.toLocaleString()}
+                    ${currentPlayer.money.toLocaleString('es-CO')}
                 </div>
             </div>
 
             <div className="main-stage">
                 <div className="question-counter">
-                    Pregunta {teamQuestionIndex + 1} de {QUESTIONS_PER_TEAM}
+                    Pregunta {questionIndex + 1} de {currentPlayer.questions.length}
                 </div>
             </div>
 
             <QuestionCard
-                key={questionKey} // Force reset on new question
+                key={questionKey}
                 question={currentQuestion}
                 onAnswer={handleAnswer}
-                timeLimit={60} // 60 seconds per question
-                lifelines={currentTeam.lifelines}
+                timeLimit={SECONDS_PER_QUESTION}
+                lifelines={currentPlayer.lifelines}
                 onUseLifeline={handleUseLifeline}
             />
         </div>

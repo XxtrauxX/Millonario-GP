@@ -1,0 +1,19 @@
+[
+  { "id": 1, "cedula": "1214748280", "name": "Estefania Garcia Palacios", "cargo": "CONSULTOR_OP" },
+  { "id": 2, "cedula": "1007453292", "name": "Ingrid Natalia Naranjo Santos", "cargo": "CONSULTOR_OP" },
+  { "id": 3, "cedula": "1036662719", "name": "Jonatan Andres Gaviria Orozco", "cargo": "CONSULTOR_OP" },
+  { "id": 4, "cedula": "1032071662", "name": "Nelson Mauricio Rios Marín", "cargo": "CONSULTOR_OP" },
+  { "id": 5, "cedula": "1036619209", "name": "Stefany Vanegas Molina", "cargo": "LIDER_CONTABLE" },
+  { "id": 6, "cedula": "1040802947", "name": "Joer Alberto Martinez Arteaga", "cargo": "LIDER_CONTABLE" },
+  { "id": 7, "cedula": "1040751755", "name": "Maria Alejandra Mosquera Dominguez", "cargo": "LIDER_CONTABLE" },
+  { "id": 8, "cedula": "1007382144", "name": "Leidy Giovana Marin Hincapie", "cargo": "LIDER_CONTABLE" },
+  { "id": 9, "cedula": "1003503180", "name": "Favian Alberto Coava Solano", "cargo": "LIDER_CONTABLE" },
+  { "id": 10, "cedula": "1026579488", "name": "Tania Correa Ortega", "cargo": "LIDER_CONTABLE" },
+  { "id": 11, "cedula": "1037649864", "name": "Manuela Rico Benitez", "cargo": "LIDER_CONTABLE" },
+  { "id": 12, "cedula": "1128462871", "name": "Camilo Jose Asprilla Valencia", "cargo": "LIDER_SENIOR" },
+  { "id": 13, "cedula": "1214739298", "name": "Katherine Ramirez Agudelo", "cargo": "LIDER_SENIOR" },
+  { "id": 14, "cedula": "1000902703", "name": "Valentina Gomez Ocampo", "cargo": "LIDER_SENIOR" },
+  { "id": 15, "cedula": "1039456843", "name": "Viviana Marcela Chavez Camargo", "cargo": "REVISORIA" },
+  { "id": 16, "cedula": "1152455321", "name": "Yadira Mosquera Urrutia", "cargo": "REVISORIA" },
+  { "id": 17, "cedula": "1098776027", "name": "Nicolas Santiago Arias Quintero", "cargo": "REVISORIA" }
+]

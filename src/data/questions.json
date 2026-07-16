@@ -1,552 +1,1897 @@
 [
   {
-    "id": 1,
-    "question": "¿Cuál de los siguientes NO es un componente del riesgo de auditoría?",
-    "options": [
-      "Riesgo inherente.",
-      "Riesgo de control.",
-      "Riesgo de detección.",
-      "Riesgo financiero."
-    ],
-    "answer": 3
+    "id": "TRIB-01",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "basico",
+    "question": "Tarifa general del IVA en Colombia",
+    "options": ["5%", "16%", "19%", "21%"],
+    "answer": 2,
+    "reference": "Art. 468 ET"
   },
   {
-    "id": 2,
-    "question": "Una entidad debe cambiar su moneda funcional cuando:",
+    "id": "TRIB-02",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "basico",
+    "question": "¿Cuál de los siguientes es un bien EXENTO de IVA (gravado a tarifa 0% con derecho a impuestos descontables)?",
     "options": [
-      "La gerencia lo decida por conveniencia.",
-      "Cambie el entorno económico principal que determina la moneda funcional.",
-      "Cambien las tasas de cambio de manera significativa.",
-      "Exista inflación en el país."
+      "Servicios médicos",
+      "Carne de res fresca (especie bovina)",
+      "Arrendamiento de vivienda",
+      "Intereses por préstamos"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Art. 477 ET"
   },
   {
-    "id": 3,
-    "question": "Una “opinión limpia” corresponde a:",
+    "id": "TRIB-03",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "basico",
+    "question": "Diferencia entre bien excluido y bien exento",
     "options": [
-      "Opinión adversa.",
-      "Opinión con salvedades.",
-      "Opinión no modificada",
-      "Abstención de opinión."
+      "Ambos otorgan derecho a IVA descontable",
+      "El exento se grava a 0% y da derecho a descontable; el excluido no causa IVA ni da descuento",
+      "El excluido se grava al 5%",
+      "No existe diferencia"
     ],
-    "answer": 2
+    "answer": 1,
+    "reference": "Arts. 424, 476 y 477 ET"
   },
   {
-    "id": 4,
-    "question": "Si tenemos 30 dias de Cartera, 20 de Inventario y 15 de Proveedores, mi ciclo de efectivo es:",
+    "id": "TRIB-04",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "medio",
+    "question": "Tope que obliga a un comerciante persona natural a inscribirse como responsable de IVA",
     "options": [
-      "65 dias",
-      "25 dias",
-      "35 dias",
-      "5 dias"
+      "Ingresos brutos de operaciones gravadas superiores a 3.500 UVT en el año",
+      "Patrimonio superior a 4.500 UVT",
+      "Tener más de 2 empleados",
+      "Cualquier ingreso, sin tope"
     ],
-    "answer": 2
+    "answer": 0,
+    "reference": "Art. 437 par. 3 ET"
   },
   {
-    "id": 5,
-    "question": "cuando un regimen ordinario le vende a un RST, este debe a:",
+    "id": "TRIB-05",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "medio",
+    "question": "¿Quiénes tienen periodo gravable BIMESTRAL del IVA?",
     "options": [
-      "retenerle el 15% del IVA",
-      "autorretenerse por el ingreso",
-      "a y b son correctas",
-      "a y b son incorrectas"
+      "Todos los responsables sin excepción",
+      "Quienes a 31 dic del año anterior tuvieron ingresos ≥ 92.000 UVT, productores de bienes exentos y exportadores",
+      "Solo personas naturales",
+      "Solo grandes contribuyentes"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Art. 600 ET"
   },
   {
-    "id": 6,
-    "question": "El dictamen/informe del auditor sirve principalmente para:",
+    "id": "TRIB-06",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "medio",
+    "question": "Requisito para que proceda el IVA descontable",
     "options": [
-      "Calcular impuestos.",
-      "Decidir el salario del gerente.",
-      "Incrementar la confianza de los usuarios en la información financiera al expresar una opinión profesional.",
-      "Sustituir la responsabilidad de la administración."
+      "Cualquier compra de la empresa",
+      "Que el IVA pagado se destine a operaciones gravadas o exentas y cumpla oportunidad y soporte",
+      "Procede siempre, sin requisitos",
+      "Solo en exportaciones"
     ],
-    "answer": 2
+    "answer": 1,
+    "reference": "Arts. 485, 488 y 496 ET"
   },
   {
-    "id": 7,
-    "question": "Si el costo de un inventario es mayor que su Valor Neto de Realización (VNR), la entidad debe:",
-    "options": [
-      "No hacer ningún ajuste hasta vender.",
-      "Reconocer un deterioro (rebaja) del inventario hasta el VNR y reconocer el gasto correspondiente.",
-      "Reclasificarlo como propiedad, planta y equipo.",
-      "Cambiar la política contable para mantener el costo."
-    ],
-    "answer": 1
+    "id": "TRIB-07",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "complejo",
+    "question": "Tratamiento en IVA del hosting y la computación en la nube (cloud computing)",
+    "options": ["Gravados al 19%", "Gravados al 5%", "Excluidos de IVA", "Exentos de IVA"],
+    "answer": 2,
+    "reference": "Art. 476 num. 21 ET"
   },
   {
-    "id": 8,
-    "question": "De los siguientes excesos, cual es el peor:",
+    "id": "TRIB-08",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "complejo",
+    "question": "Responsable con operaciones gravadas y excluidas: IVA común no imputable directamente",
     "options": [
-      "Exceso de Cartera",
-      "Exceso de Inventario",
-      "Exceso de Liquidez",
-      "Exceso de Activos Fijos"
+      "Se descuenta en su totalidad",
+      "Se aplica prorrateo según la proporción de ingresos gravados",
+      "No se declara",
+      "Se descuenta el 50%"
     ],
-    "answer": 0
+    "answer": 1,
+    "reference": "Art. 490 ET"
   },
   {
-    "id": 9,
-    "question": "La depreciación (NIIF) busca:",
+    "id": "TRIB-09",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "basico",
+    "question": "Momento de causación del IVA en la venta de bienes corporales muebles",
     "options": [
-      "Reducir impuestos.",
-      "Distribuir sistemáticamente el importe depreciable de un activo a lo largo de su vida útil.",
-      "Aumentar los gastos del periodo para mejorar márgenes futuros.",
-      "Actualizar el activo a valor de mercado."
+      "Fecha de emisión de la factura o de la entrega, lo que ocurra primero",
+      "Únicamente al recibir el pago",
+      "Al cierre del bimestre",
+      "Al final del año gravable"
     ],
-    "answer": 1
+    "answer": 0,
+    "reference": "Art. 429 ET"
   },
   {
-    "id": 10,
-    "question": "¿Qué entidades están obligadas por ley a tener Revisor Fiscal en Colombia?",
+    "id": "TRIB-10",
+    "bank": "tributario",
+    "tema": "IVA",
+    "nivel": "complejo",
+    "question": "Saldos a favor en IVA de exportadores y productores de bienes exentos",
     "options": [
-      "Todas las empresas sin excepción.",
-      "Solo las que cotizan en bolsa.",
-      "Las sociedades y entidades que la ley señale expresamente y, además, las sociedades comerciales que superen los topes de activos o ingresos previstos en la normativa aplicable.",
-      "Solo las entidades del sector público."
+      "No son recuperables",
+      "Pueden solicitarse en devolución o compensación",
+      "Solo se imputan al periodo siguiente de forma indefinida",
+      "Se pierden al cierre del año"
     ],
-    "answer": 2
+    "answer": 1,
+    "reference": "Arts. 815 y 850 ET"
   },
   {
-    "id": 11,
-    "question": "\"Rotación\" de cartera se mide en:",
+    "id": "TRIB-11",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "basico",
+    "question": "Naturaleza jurídica de la retención en la fuente",
     "options": [
-      "Tiempo",
-      "Dinero",
-      "Veces",
-      "Solo en días"
+      "Es un impuesto autónomo",
+      "Es un mecanismo de recaudo anticipado del impuesto, no un impuesto en sí",
+      "Es una sanción",
+      "Es un descuento tributario"
     ],
-    "answer": 0
+    "answer": 1,
+    "reference": "Art. 367 ET"
   },
   {
-    "id": 12,
-    "question": "Para un Banco, que utilidad utiliza para decidir si hay o no un posible crédito:",
-    "options": [
-      "Utilidad bruta",
-      "Utilidad neta",
-      "Utilidad Operacional",
-      "Utilidad Antes de Impuestos"
-    ],
-    "answer": 2
+    "id": "TRIB-12",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "basico",
+    "question": "Tarifa de retención por compras generales (beneficiario declarante)",
+    "options": ["1%", "2,5%", "4%", "11%"],
+    "answer": 1,
+    "reference": "Art. 401 ET / Dcto 1625/2016"
   },
   {
-    "id": 13,
-    "question": "El delito penal por omision del agente retenedor prescribe a:",
-    "options": [
-      "5 años",
-      "10 años",
-      "en el doble de la pena",
-      "nunca prescribe"
-    ],
-    "answer": 2
+    "id": "TRIB-13",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "basico",
+    "question": "Tarifa de retención por servicios generales (beneficiario declarante)",
+    "options": ["2%", "4%", "6%", "11%"],
+    "answer": 1,
+    "reference": "Art. 392 ET / Dcto 1625/2016"
   },
   {
-    "id": 14,
-    "question": "Una sociedad recien constituida en su primer año de operacion declara el iva de forma",
-    "options": [
-      "bimestral",
-      "cuatrimestral",
-      "anual",
-      "mensual"
-    ],
-    "answer": 0
+    "id": "TRIB-14",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "medio",
+    "question": "Tarifa de retención en honorarios y comisiones cuando el beneficiario es persona jurídica",
+    "options": ["4%", "6%", "10%", "11%"],
+    "answer": 3,
+    "reference": "Art. 392 ET / Dcto 1625/2016"
   },
   {
-    "id": 15,
-    "question": "Cual de estos no es un tipo de pasivo:",
-    "options": [
-      "Apalancamiento",
-      "Endeudamiento",
-      "Impositivo",
-      "Financiamiento"
-    ],
-    "answer": 2
+    "id": "TRIB-15",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "medio",
+    "question": "Cuantía mínima no sujeta a retención en el concepto de servicios",
+    "options": ["4 UVT", "27 UVT", "10 UVT", "No existe base mínima"],
+    "answer": 0,
+    "reference": "Art. 392 ET / Dcto 1625/2016"
   },
   {
-    "id": 16,
-    "question": "Para un Socio es mejor:",
-    "options": [
-      "Utilidad bruta",
-      "Utilidad neta",
-      "Utilidad Operacional",
-      "Utilidad Antes de Impuestos"
-    ],
-    "answer": 1
+    "id": "TRIB-16",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "medio",
+    "question": "Tarifa de retención sobre rendimientos financieros (intereses)",
+    "options": ["4%", "7%", "10%", "2,5%"],
+    "answer": 1,
+    "reference": "Dcto 1625/2016 (art. 1.2.4.2.5)"
   },
   {
-    "id": 17,
-    "question": "Una perdida fiscal del año 2010 se puede compensar en:",
-    "options": [
-      "maximo en los proximos 12 años",
-      "en los proximos 6 años",
-      "en cualquier tiempo",
-      "ninguna de las anteriores"
-    ],
-    "answer": 2
+    "id": "TRIB-17",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "complejo",
+    "question": "Retención por servicios técnicos, asistencia técnica y consultoría prestados por no residentes (sin CDI aplicable)",
+    "options": ["10%", "15%", "20%", "33%"],
+    "answer": 2,
+    "reference": "Art. 408 ET"
   },
   {
-    "id": 18,
-    "question": "A mayor riesgo mayor…:",
-    "options": [
-      "Rentabilidad",
-      "inversión",
-      "Liquidez",
-      "Capital a distribuir"
-    ],
-    "answer": 0
+    "id": "TRIB-18",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "medio",
+    "question": "Tarifa de retención por arrendamiento de bienes inmuebles",
+    "options": ["2,5%", "3,5%", "4%", "7%"],
+    "answer": 1,
+    "reference": "Art. 401 ET / Dcto 1625/2016"
   },
   {
-    "id": 19,
-    "question": "Cual es el pasivo mas riesgoso?",
+    "id": "TRIB-19",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "complejo",
+    "question": "¿Quiénes practican la autorretención especial a título de renta (Dcto 2201/2016)?",
     "options": [
-      "Apalancamiento",
-      "Endeudamiento",
-      "Laboral",
-      "Financiamiento"
+      "Todas las personas naturales",
+      "Las sociedades nacionales contribuyentes de renta exoneradas de aportes (Art. 114-1 ET)",
+      "Solo grandes contribuyentes",
+      "Nadie, fue derogada"
     ],
-    "answer": 3
+    "answer": 1,
+    "reference": "Art. 1.2.6.6 Dcto 1625/2016; Art. 114-1 ET"
   },
   {
-    "id": 20,
-    "question": "Cuales son los componentes de una cuota (de credito):",
-    "options": [
-      "Capital e Interes",
-      "Capital, Interes, Seguro y amortizacion",
-      "Capital, Interes y Seguro",
-      "Cuota, Capital, Interes y seguros"
-    ],
-    "answer": 2
+    "id": "TRIB-20",
+    "bank": "tributario",
+    "tema": "Retención",
+    "nivel": "complejo",
+    "question": "Tarifa de retención sobre dividendos distribuidos a sociedades nacionales",
+    "options": ["0%", "7,5%", "10%", "20%"],
+    "answer": 2,
+    "reference": "Art. 242-1 ET (mod. Ley 2277/2022)"
   },
   {
-    "id": 21,
-    "question": "Frente a una resolucion sancion el contribuyente tiene el siguiente recurso:",
+    "id": "TRIB-21",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "basico",
+    "question": "Sistema de determinación de la renta de la persona natural residente",
     "options": [
-      "Recurso de reconsideracion",
-      "Recursos de reposicion",
-      "Nulidad y restablecimiento del derecho",
-      "A y D son correctas"
+      "Sistema único",
+      "Sistema cedular (cédula general, de pensiones y de dividendos)",
+      "Renta presuntiva obligatoria",
+      "Tabla fija única"
     ],
-    "answer": 3
+    "answer": 1,
+    "reference": "Art. 330 ET"
   },
   {
-    "id": 22,
-    "question": "Una persona natural que recibe ingresos por dividendos debe realizar aportes a:",
+    "id": "TRIB-22",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "basico",
+    "question": "La cédula general agrupa",
     "options": [
-      "Administradoras de la seguridad social",
-      "La cámara de comercio",
-      "La dian",
-      "UGPP"
+      "Solo rentas de trabajo",
+      "Rentas de trabajo, de capital y no laborales",
+      "Dividendos y pensiones",
+      "Solo honorarios"
     ],
-    "answer": 0
+    "answer": 1,
+    "reference": "Art. 335 ET"
   },
   {
-    "id": 23,
-    "question": "El intervalo defensivo se mide en?",
+    "id": "TRIB-23",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "medio",
+    "question": "Límite global de rentas exentas y deducciones en la cédula general",
     "options": [
-      "Tiempo",
-      "Cantidad de ebitdas",
-      "Vs el Sector",
-      "Unidades de Pesos COP"
+      "25% sin tope",
+      "40% de la renta líquida, sin exceder 1.340 UVT anuales",
+      "50% de los ingresos",
+      "No hay límite"
     ],
-    "answer": 0
+    "answer": 1,
+    "reference": "Art. 336 num. 3 ET"
   },
   {
-    "id": 24,
-    "question": "La retención en la fuente que le aplican a una empresa, es un problema?",
-    "options": [
-      "Tributario para el cierre",
-      "De liquidez en el mes que se practica",
-      "De Rentabilidad final",
-      "Rotación de Cartera"
-    ],
-    "answer": 1
+    "id": "TRIB-24",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "medio",
+    "question": "Tope anual de la renta exenta del 25% sobre rentas de trabajo",
+    "options": ["240 UVT", "790 UVT", "1.340 UVT", "2.880 UVT"],
+    "answer": 1,
+    "reference": "Art. 206 num. 10 ET"
   },
   {
-    "id": 25,
-    "question": "Que es el WACC",
+    "id": "TRIB-25",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "medio",
+    "question": "Tratamiento en renta de los aportes obligatorios a salud y pensión del trabajador",
     "options": [
-      "Es un indicador de deuda hacia los proveedores",
-      "Es el costo promedio ponderado de capital",
-      "Es un item que sirve para valores empresas bajo la modalidad de múltiplos de ebitda",
-      "Todas las anteriores"
+      "Renta exenta",
+      "Ingreso no constitutivo de renta ni ganancia ocasional (INCRNGO)",
+      "Deducción del 40%",
+      "Costo"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Arts. 55 y 56 ET"
   },
   {
-    "id": 26,
-    "question": "Cual es la formula del punto de equilibrio (cuanto debo de vender?)",
+    "id": "TRIB-26",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "complejo",
+    "question": "Deducción por dependientes en renta de personas naturales",
     "options": [
-      "Costos fijos / utilidad Bruta",
-      "Gastos fijos / Utilidad Bruta",
-      "Costos y Gastos Fijos / Margen de contribución",
-      "Costos y Gastos Variables / Margen de contribución"
+      "40% del ingreso sin límite",
+      "10% del ingreso bruto hasta 32 UVT mensuales; y adicionalmente 72 UVT anuales por dependiente (hasta 4)",
+      "No existe",
+      "Solo aplica a pensionados"
     ],
-    "answer": 2
+    "answer": 1,
+    "reference": "Art. 387 ET; Art. 336 num. 3 ET"
   },
   {
-    "id": 27,
-    "question": "En el regimen simple de tributacion esta prohibido que los accionistas sean empleados de la misma sociedad",
+    "id": "TRIB-27",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "basico",
+    "question": "Tarifa del impuesto de renta de personas naturales residentes (cédula general y pensiones)",
     "options": [
-      "Verdadero, porque el SIMPLE no permite relaciones laborales con socios.",
-      "Falso, siempre que exista un contrato laboral real y se cumplan las obligaciones laborales.",
-      "Verdadero, salvo que el socio tenga menos del 10 % de participación.",
-      "Falso, únicamente cuando la empresa sea del sector servicios."
+      "Fija del 35%",
+      "Progresiva por rangos en UVT (0% hasta 39%)",
+      "Fija del 19%",
+      "Fija del 10%"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Art. 241 ET"
   },
   {
-    "id": 28,
-    "question": "Como se calcula la utilidad bruta:",
+    "id": "TRIB-28",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "medio",
+    "question": "Renta presuntiva vigente para personas naturales",
     "options": [
-      "Ingresos - costos",
-      "Ingresos – costos – gastos administrativos",
-      "Ingresos – costos – gastos administrativos – gastos comerciales",
-      "Ingresos – costos – gastos administrativos – gastos comerciales - impuestos"
+      "3,5% del patrimonio líquido",
+      "0% (desde el año gravable 2021)",
+      "1% del patrimonio",
+      "6% del patrimonio"
     ],
-    "answer": 0
+    "answer": 1,
+    "reference": "Art. 188 ET"
   },
   {
-    "id": 29,
-    "question": "Que significa Ebitda:",
+    "id": "TRIB-29",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "complejo",
+    "question": "Tras la Ley 2277/2022, los dividendos no gravados percibidos por una persona natural residente",
     "options": [
-      "Ganancia neta de la empresa",
-      "Ganancia de los socios",
+      "Están totalmente exentos",
+      "Se integran a la cédula general y se gravan con la tarifa del Art. 241, con descuento del Art. 254-1 ET",
+      "Tributan a tarifa fija del 35%",
+      "No se declaran"
+    ],
+    "answer": 1,
+    "reference": "Arts. 242 y 254-1 ET (mod. Ley 2277/2022)"
+  },
+  {
+    "id": "TRIB-30",
+    "bank": "tributario",
+    "tema": "Renta PN",
+    "nivel": "medio",
+    "question": "Tope de ingresos brutos que obliga a una persona natural a declarar renta",
+    "options": ["1.400 UVT", "4.500 UVT", "3.500 UVT", "790 UVT"],
+    "answer": 0,
+    "reference": "Art. 592 ET y decreto reglamentario"
+  },
+  {
+    "id": "TRIB-31",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "basico",
+    "question": "Tarifa general de renta para sociedades nacionales",
+    "options": ["30%", "33%", "35%", "39%"],
+    "answer": 2,
+    "reference": "Art. 240 ET"
+  },
+  {
+    "id": "TRIB-32",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "medio",
+    "question": "Sobretasa en renta para entidades del sector financiero",
+    "options": [
+      "3 puntos adicionales",
+      "5 puntos adicionales (tarifa total 40%)",
+      "10 puntos adicionales",
+      "No tienen sobretasa"
+    ],
+    "answer": 1,
+    "reference": "Art. 240 par. 2 ET"
+  },
+  {
+    "id": "TRIB-33",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "medio",
+    "question": "Renta presuntiva vigente para personas jurídicas",
+    "options": ["3,5%", "0%", "1%", "6%"],
+    "answer": 1,
+    "reference": "Art. 188 ET"
+  },
+  {
+    "id": "TRIB-34",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "complejo",
+    "question": "Tasa Mínima de Tributación introducida por la Ley 2277/2022",
+    "options": [
+      "Es del 35% sobre los ingresos",
+      "Garantiza una tasa efectiva mínima del 15% sobre la utilidad depurada (TTD)",
+      "Es del 20%",
+      "Solo aplica a personas naturales"
+    ],
+    "answer": 1,
+    "reference": "Art. 240 par. 6 ET"
+  },
+  {
+    "id": "TRIB-35",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "basico",
+    "question": "Determinación de la renta líquida (regla general)",
+    "options": [
+      "Ingresos brutos menos retenciones",
+      "Ingresos netos menos costos y deducciones (depuración del Art. 26)",
+      "Patrimonio por la tarifa",
+      "Ingresos por 35%"
+    ],
+    "answer": 1,
+    "reference": "Art. 26 ET"
+  },
+  {
+    "id": "TRIB-36",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "medio",
+    "question": "Requisitos generales para la deducibilidad de un gasto",
+    "options": [
+      "Estar contabilizado únicamente",
+      "Relación de causalidad, necesidad y proporcionalidad, con soporte y retención cuando aplique",
+      "Tener factura únicamente",
+      "Ningún requisito"
+    ],
+    "answer": 1,
+    "reference": "Art. 107 ET"
+  },
+  {
+    "id": "TRIB-37",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "complejo",
+    "question": "Finalidad del descuento por impuestos pagados en el exterior",
+    "options": [
+      "Eliminar el impuesto colombiano",
+      "Evitar la doble imposición, descontando el impuesto pagado fuera sobre rentas de fuente extranjera, con límites",
+      "Aumentar la base gravable",
+      "No existe ese descuento"
+    ],
+    "answer": 1,
+    "reference": "Art. 254 ET"
+  },
+  {
+    "id": "TRIB-38",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "medio",
+    "question": "Las sociedades nacionales tributan en Colombia sobre",
+    "options": [
+      "Solo rentas de fuente nacional",
+      "Sus rentas y ganancias ocasionales de fuente nacional y extranjera (renta mundial)",
+      "Solo rentas del exterior",
+      "Solo dividendos"
+    ],
+    "answer": 1,
+    "reference": "Art. 12 ET"
+  },
+  {
+    "id": "TRIB-39",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "complejo",
+    "question": "La regla de subcapitalización limita los intereses cuando",
+    "options": [
+      "La empresa tiene utilidades",
+      "Las deudas con vinculados que generan intereses exceden 2 veces el patrimonio líquido del año anterior",
+      "Siempre, sin condición",
+      "Nunca aplica"
+    ],
+    "answer": 1,
+    "reference": "Art. 118-1 ET"
+  },
+  {
+    "id": "TRIB-40",
+    "bank": "tributario",
+    "tema": "Renta PJ",
+    "nivel": "medio",
+    "question": "Tarifa de ganancia ocasional general (venta de activos fijos poseídos ≥ 2 años)",
+    "options": ["10%", "15%", "20%", "35%"],
+    "answer": 1,
+    "reference": "Arts. 313 y 314 ET (mod. Ley 2277/2022)"
+  },
+  {
+    "id": "TRIB-41",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "basico",
+    "question": "Término general de firmeza de las declaraciones tributarias",
+    "options": ["2 años", "3 años", "5 años", "6 meses"],
+    "answer": 1,
+    "reference": "Art. 714 ET"
+  },
+  {
+    "id": "TRIB-42",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "basico",
+    "question": "Sanción mínima en materia tributaria",
+    "options": ["5 UVT", "10 UVT", "1 UVT", "100 UVT"],
+    "answer": 1,
+    "reference": "Art. 639 ET"
+  },
+  {
+    "id": "TRIB-43",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "medio",
+    "question": "Sanción por extemporaneidad antes de emplazamiento",
+    "options": [
+      "10% del impuesto por mes",
+      "5% del impuesto a cargo por cada mes o fracción de retardo, sin exceder el 100%",
+      "Valor fijo de 10 UVT",
+      "20% por mes"
+    ],
+    "answer": 1,
+    "reference": "Art. 641 ET"
+  },
+  {
+    "id": "TRIB-44",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "medio",
+    "question": "Término para responder el requerimiento especial",
+    "options": ["1 mes", "3 meses", "6 meses", "15 días"],
+    "answer": 1,
+    "reference": "Art. 707 ET"
+  },
+  {
+    "id": "TRIB-45",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "complejo",
+    "question": "Firmeza de la declaración que determina o compensa pérdidas fiscales",
+    "options": ["3 años", "5 años", "2 años", "12 meses"],
+    "answer": 1,
+    "reference": "Art. 147 ET"
+  },
+  {
+    "id": "TRIB-46",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "medio",
+    "question": "Sanción por inexactitud (regla general)",
+    "options": [
+      "50% del mayor valor",
+      "100% de la diferencia entre el saldo determinado y el declarado",
+      "10 UVT",
+      "200% en todos los casos"
+    ],
+    "answer": 1,
+    "reference": "Art. 648 ET"
+  },
+  {
+    "id": "TRIB-47",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "complejo",
+    "question": "Beneficio de auditoría: firmeza en 6 meses cuando el impuesto neto de renta se incrementa frente al año anterior en al menos",
+    "options": ["35%", "15%", "5%", "50%"],
+    "answer": 0,
+    "reference": "Art. 689-3 ET"
+  },
+  {
+    "id": "TRIB-48",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "medio",
+    "question": "Norma aplicable a la corrección que aumenta el impuesto a pagar o disminuye el saldo a favor",
+    "options": ["Art. 589 ET", "Art. 588 ET", "No es posible corregir", "Art. 714 ET"],
+    "answer": 1,
+    "reference": "Art. 588 ET"
+  },
+  {
+    "id": "TRIB-49",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "complejo",
+    "question": "Sanción por no declarar renta (a falta de otra base)",
+    "options": [
+      "5% de las consignaciones",
+      "20% de las consignaciones, ingresos brutos o de los ingresos de la última declaración, el mayor",
+      "10 UVT fijos",
+      "100% del impuesto"
+    ],
+    "answer": 1,
+    "reference": "Art. 643 num. 1 ET"
+  },
+  {
+    "id": "TRIB-50",
+    "bank": "tributario",
+    "tema": "Procedimiento",
+    "nivel": "medio",
+    "question": "Base de liquidación de los intereses de mora",
+    "options": [
+      "Tasa fija del 1% mensual",
+      "Tasa diaria a partir de la tasa de usura vigente certificada por la Superfinanciera",
+      "No se cobran intereses",
+      "El IPC anual"
+    ],
+    "answer": 1,
+    "reference": "Art. 635 ET"
+  },
+  {
+    "id": "FIN-01",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "basico",
+    "question": "¿Qué significa EBITDA?",
+    "options": [
+      "Rentabilidad antes de intereses, impuestos, depreciación y amortización",
       "Ganancias antes de impuestos, intereses, depreciación y amortización",
-      "Ganancia real de la compañía"
+      "Rentabilidad antes de impuestos, intereses, depreciación y amortización",
+      "Ganancias antes de intereses, impuestos, depreciación y amortización"
     ],
-    "answer": 2
+    "answer": 3,
+    "reference": "Earnings Before Interest, Taxes, Depreciation and Amortization: utilidad operativa + depreciaciones y amortizaciones"
   },
   {
-    "id": 30,
-    "question": "Como se mide la inflación:",
+    "id": "FIN-02",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "basico",
+    "question": "El objetivo financiero fundamental de una empresa es:",
     "options": [
-      "Variación del desempleo",
-      "Variación del dólar vs el COP",
-      "Variación de salario minimo",
-      "Variación de los indices de precios del consumidor (IPC)"
+      "Maximizar la utilidad contable del periodo",
+      "Maximizar el valor de la empresa para sus accionistas",
+      "Minimizar el pago de impuestos",
+      "Aumentar las ventas todos los años"
     ],
-    "answer": 3
+    "answer": 1,
+    "reference": "La utilidad de un periodo puede manipularse; el valor incorpora caja, riesgo y largo plazo"
   },
   {
-    "id": 31,
-    "question": "Si tengo en la cuenta 400.000.000, y el capital de trabajo por mes son 250.000.000 tengo:",
+    "id": "FIN-03",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "basico",
+    "question": "¿Por qué la utilidad neta puede ser distinta de la caja generada en el periodo?",
     "options": [
-      "150.000.000 de capital ocioso",
-      "150.000.000 susceptible a distribución",
-      "150.000.000 de ahorro",
-      "Todas las anteriores"
+      "Porque la contabilidad se lleva en moneda extranjera",
+      "Porque la utilidad incluye partidas causadas que no mueven efectivo (depreciación, ventas a crédito)",
+      "Nunca son distintas",
+      "Por el pago de dividendos"
     ],
-    "answer": 0
+    "answer": 1,
+    "reference": "Contabilidad de causación (devengo) vs. movimiento real de efectivo"
   },
   {
-    "id": 32,
-    "question": "El descuento tributario del art 258-1 se puede tomar en",
+    "id": "FIN-04",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "basico",
+    "question": "El punto de equilibrio es el nivel de ventas en el que:",
     "options": [
-      "solo en año de adquisicion del activo",
-      "en al año de adquisicion del activo o en los proximo 4 años",
-      "en cualquier tiempo",
-      "ninguna de las anteriores"
+      "La utilidad neta es máxima",
+      "Los ingresos cubren exactamente los costos y gastos totales (utilidad = 0)",
+      "El EBITDA es negativo",
+      "Se agota el inventario"
     ],
-    "answer": 2
+    "answer": 1,
+    "reference": "PE = Costos fijos / margen de contribución unitario (o % de margen de contribución)"
   },
   {
-    "id": 33,
-    "question": "cuando una declaracion tributaria queda ineficaz por falta de firmas, la sancion que debe liquidarse es",
+    "id": "FIN-05",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "medio",
+    "question": "Una empresa tiene utilidad bruta del 40%. El mes siguiente las ventas aumentan 10% y los costos aumentan 10%. La utilidad bruta (en pesos) será:",
     "options": [
-      "5% por mes o fraccion sobre el impuesto a cargo",
-      "2% de la sancion del extemporaneidad del art 641 del et",
-      "10% por mes o fraccion de mes sobre el impuesto a cargo",
-      "no tiene sancion"
+      "Más alta",
+      "Más baja",
+      "No hay variación",
+      "El dinero pierde poder adquisitivo en el tiempo"
     ],
-    "answer": 1
+    "answer": 0,
+    "reference": "El monto absoluto crece 10% (ambos componentes escalan igual), aunque el margen % se mantiene en 40%"
   },
   {
-    "id": 34,
-    "question": "En el impuesto de industria y comercio la territorialidad en la operacion de arrendamientos de bienes inmueble se da en:",
+    "id": "FIN-06",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "medio",
+    "question": "En el mismo caso anterior (ventas +10% y costos +10%), la variación del MARGEN bruto (%) será:",
     "options": [
-      "el lugar donde estan ubicados los. Inmubles",
-      "en el lugar donde se firma el contrato de arrendamiento",
-      "en el lugar donde reside el arrendador",
-      "ninguna de las anteriores"
+      "Más alto",
+      "Más bajo",
+      "No hay variación",
+      "El dinero pierde poder adquisitivo en el tiempo"
     ],
-    "answer": 0
+    "answer": 2,
+    "reference": "El margen permanece en 40%: si ingresos y costos varían en la misma proporción, la razón no cambia"
   },
   {
-    "id": 35,
-    "question": "para que un gasto por concepto de arrendamientos cobrado por una persona natural sea deducible se requiere",
+    "id": "FIN-07",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "medio",
+    "question": "¿Cuál de los siguientes es típicamente un costo FIJO?",
     "options": [
-      "que se le practique la retencion correspondiente, se valide el pago de seguridad social y se realice el documento soporte",
-      "que se practique la retencion en la fuente y se realice el documento soporte",
-      "que se le practique retencion en la fuente",
-      "ninguna de las anteriores"
+      "Materia prima",
+      "Comisiones sobre ventas",
+      "Arrendamiento de la planta",
+      "Fletes por unidad vendida"
     ],
-    "answer": 2
+    "answer": 2,
+    "reference": "No depende del volumen producido o vendido en el corto plazo"
   },
   {
-    "id": 36,
-    "question": "¿Cuál de estas afirmaciones es la mejor opción?",
+    "id": "FIN-08",
+    "bank": "financiera",
+    "tema": "Fundamentos",
+    "nivel": "complejo",
+    "question": "La principal limitación del EBITDA como medida de generación de caja es que:",
     "options": [
-      "Es mejor que el WACC sea mayor cada año",
-      "Es mejor que el WACC sea inferior cada año",
-      "Es mejor que el WACC sea igual al del año pasado",
-      "Es mejor que el WACC sea superior a la del promedio de empresas del mismo sector"
+      "Incluye la depreciación",
+      "No considera capex, variación de capital de trabajo ni impuestos",
+      "Es igual al flujo de caja libre",
+      "Solo aplica a empresas industriales"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Una empresa puede tener EBITDA positivo y flujo de caja negativo por inversiones y crecimiento de cartera/inventarios"
   },
   {
-    "id": 37,
-    "question": "Un gasto incurrido en el exterior por concepto de hoteles y restaurantes es deducible siempre que se cumpla la siguiente condición",
+    "id": "FIN-09",
+    "bank": "financiera",
+    "tema": "Indicadores",
+    "nivel": "basico",
+    "question": "Una razón corriente de 2,0 significa que:",
     "options": [
-      "Que se le practique retención en la fuente",
-      "Que se le aplique el límite del art 122 del ET",
-      "No es deducible de ninguna manera",
-      "A y B son correctas"
+      "La empresa gana el doble de lo que gasta",
+      "Por cada peso de pasivo corriente hay dos pesos de activo corriente",
+      "El inventario rota dos veces al año",
+      "La deuda es el doble del patrimonio"
     ],
-    "answer": 3
+    "answer": 1,
+    "reference": "Razón corriente = activo corriente / pasivo corriente; mide liquidez de corto plazo"
   },
   {
-    "id": 38,
-    "question": "Un saldo a favor en renta del año 2020 que no se solicitó en devolución o compensación se puede recuperar",
+    "id": "FIN-10",
+    "bank": "financiera",
+    "tema": "Indicadores",
+    "nivel": "basico",
+    "question": "El ROE mide:",
     "options": [
-      "No, porque al no solicitarse oportunamente se pierde automáticamente.",
-      "Sí, puede imputarse en declaraciones posteriores dentro del término legal.",
-      "Solo si la DIAN lo autoriza mediante fiscalización.",
-      "Únicamente si el contribuyente pertenece al Régimen Simple."
+      "La rentabilidad sobre el total de activos",
+      "La rentabilidad sobre el patrimonio de los accionistas",
+      "El margen operativo",
+      "La rotación del inventario"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "ROE = utilidad neta / patrimonio; retorno del capital propio invertido"
   },
   {
-    "id": 39,
-    "question": "En un contrato de mandato, el mandante para efectos de IVA toma las características del:",
+    "id": "FIN-11",
+    "bank": "financiera",
+    "tema": "Indicadores",
+    "nivel": "basico",
+    "question": "La rotación de cartera expresada en días indica:",
     "options": [
-      "Mandante",
-      "Mandatario",
-      "Contratista",
-      "Proveedor"
+      "Los días que tarda la empresa en pagar a proveedores",
+      "Los días promedio que tarda la empresa en cobrar a sus clientes",
+      "Los días de inventario disponibles",
+      "El plazo de la deuda financiera"
     ],
-    "answer": 0
+    "answer": 1,
+    "reference": "Días de cartera = (cartera promedio / ventas a crédito) × 365"
   },
   {
-    "id": 40,
-    "question": "En un contrato de colaboración empresarial como el contrato de cuentas en participación, el socio gestor debe realizar los documentos soportes de las operaciones",
-    "options": [
-      "Verdadero, porque el socio gestor es quien ejecuta la operación frente a terceros y lleva el control del negocio.",
-      "Falso, porque cada socio debe emitir sus propios documentos soporte.",
-      "Verdadero, solo si el contrato está registrado en Cámara de Comercio.",
-      "Falso, porque los documentos deben ser emitidos por el socio oculto."
-    ],
-    "answer": 0
+    "id": "FIN-12",
+    "bank": "financiera",
+    "tema": "Indicadores",
+    "nivel": "medio",
+    "question": "La prueba ácida se diferencia de la razón corriente porque excluye:",
+    "options": ["La cartera", "El efectivo", "Los inventarios", "Los pasivos corrientes"],
+    "answer": 2,
+    "reference": "Los inventarios son el activo corriente menos líquido; la prueba ácida mide liquidez inmediata"
   },
   {
-    "id": 41,
-    "question": "Una sanción por extemporaneidad genera intereses de mora",
+    "id": "FIN-13",
+    "bank": "financiera",
+    "tema": "Indicadores",
+    "nivel": "medio",
+    "question": "El ciclo de conversión de efectivo se calcula como:",
     "options": [
-      "Verdadero, de acuerdo al ART 605 del ET",
-      "Falso, una sanción no genera mora",
-      "Verdadero, a partir de la misma cantidad de periodos no declarados",
-      "Falso, de acuerdo al ART 605 del ET no genera mora"
+      "Días de cartera + días de inventario − días de proveedores",
+      "Días de proveedores − días de cartera",
+      "Días de inventario × días de cartera",
+      "Ventas / activos totales"
     ],
-    "answer": 1
+    "answer": 0,
+    "reference": "Mide los días que la operación debe financiarse con recursos propios o deuda"
   },
   {
-    "id": 42,
-    "question": "Cuando presento la retención en la fuente y el valor a pagar es de $ 100.000 el termino que tengo para pagarla sin que quede ineficaz es de",
+    "id": "FIN-14",
+    "bank": "financiera",
+    "tema": "Indicadores",
+    "nivel": "medio",
+    "question": "El KTNO (capital de trabajo neto operativo) se compone de:",
     "options": [
-      "Dos meses",
-      "6 meses",
-      "Un año",
-      "Nunca queda ineficaz"
+      "Efectivo + inversiones temporales",
+      "Cartera + inventarios − cuentas por pagar a proveedores",
+      "Activo corriente − pasivo corriente",
+      "Patrimonio − activos fijos"
     ],
-    "answer": 3
+    "answer": 1,
+    "reference": "Concepto de Óscar León García, ampliamente usado en gerencia del valor en Colombia"
   },
   {
-    "id": 43,
-    "question": "Una sociedad cumplió topes para tener revisor fiscal en el año 2025, por tal motivo la declaración de enero del 2026 de retención en la fuente debe estar firmada por el revisor fiscal, de no ser así la declaración queda ineficaz",
+    "id": "FIN-15",
+    "bank": "financiera",
+    "tema": "Indicadores",
+    "nivel": "complejo",
+    "question": "Una empresa con ROA del 8% y costo de deuda del 12% que aumenta su endeudamiento:",
     "options": [
-      "Falso, porque la firma del revisor fiscal solo es obligatoria en la declaración de renta.",
-      "Falso, porque basta con la firma del representante legal.",
-      "Verdadero, porque al estar obligada a tener revisor fiscal, su firma es requisito de validez de la declaración.",
-      "Verdadero, pero solo aplica para grandes contribuyentes."
+      "Mejora la rentabilidad del accionista",
+      "Deteriora la rentabilidad del accionista (apalancamiento financiero negativo)",
+      "No afecta el ROE",
+      "Reduce automáticamente el WACC"
     ],
-    "answer": 2
+    "answer": 1,
+    "reference": "El apalancamiento solo favorece al accionista cuando los activos rentan más que el costo de la deuda"
   },
   {
-    "id": 44,
-    "question": "Si tengo una compra 10.000 USD con una TRM de 4.000, y otra de 90.000 USD a una TRM de 5.000, mi costo promedio ponderado en pesos COP es de?",
+    "id": "FIN-16",
+    "bank": "financiera",
+    "tema": "Flujo de caja",
+    "nivel": "basico",
+    "question": "Las tres actividades del estado de flujos de efectivo son:",
     "options": [
-      "4.500",
-      "4.900",
-      "4.100",
-      "4.950"
+      "Operación, inversión y financiación",
+      "Ventas, costos y gastos",
+      "Corto, mediano y largo plazo",
+      "Activo, pasivo y patrimonio"
     ],
-    "answer": 1
+    "answer": 0,
+    "reference": "Estructura definida por NIC 7 / Sección 7 NIIF para PYMES"
   },
   {
-    "id": 45,
-    "question": "Cuanto tiempo tengo para corregir una declaración donde se pretende aumentar un saldo a favor",
-    "options": [
-      "Un año",
-      "3 años",
-      "6 meses",
-      "Puedo corregir en cualquier termino"
-    ],
-    "answer": 0
+    "id": "FIN-17",
+    "bank": "financiera",
+    "tema": "Flujo de caja",
+    "nivel": "medio",
+    "question": "Si un activo aumenta con respecto al año anterior, la variación (signo) para el flujo de efectivo será:",
+    "options": ["Positiva", "Negativa", "Igual", "Indiferente"],
+    "answer": 1,
+    "reference": "Un aumento de activos es un USO de caja (se invirtió efectivo en ellos); una disminución es fuente"
   },
   {
-    "id": 46,
-    "question": "Una sociedad realizó una Fra de venta el 31 de diciembre del 2025, pero el servicio no lo prestó hasta enero del 2026, de acuerdo al art 28 del ET el ingreso se debe reconocer en",
+    "id": "FIN-18",
+    "bank": "financiera",
+    "tema": "Flujo de caja",
+    "nivel": "medio",
+    "question": "Un aumento en el saldo de proveedores durante el periodo tiene un efecto:",
     "options": [
-      "Diciembre de 2025",
-      "Enero del 2026",
-      "En cualquier mes",
-      "Ninguna de las anteriores"
+      "Negativo en el flujo de caja",
+      "Positivo en el flujo de caja (fuente de financiación espontánea)",
+      "Neutro",
+      "Solo afecta la utilidad"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Los aumentos de pasivos operativos son fuente de caja: se difiere el desembolso"
   },
   {
-    "id": 47,
-    "question": "En el régimen simple de tributación está prohibido que los accionistas sean empleados de la misma sociedad",
+    "id": "FIN-19",
+    "bank": "financiera",
+    "tema": "Flujo de caja",
+    "nivel": "medio",
+    "question": "En el método indirecto, la depreciación:",
     "options": [
-      "Verdadero, porque el SIMPLE no permite relaciones laborales con socios.",
-      "Falso, siempre que exista un contrato laboral real y se cumplan las obligaciones laborales.",
-      "Verdadero, salvo que el socio tenga menos del 10 % de participación.",
-      "Falso, únicamente cuando la empresa sea del sector servicios."
+      "Se resta de la utilidad neta",
+      "Se suma a la utilidad neta",
+      "No se toca",
+      "Se registra en financiación"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Es un gasto que no implica salida de efectivo; se revierte para llegar al flujo operativo"
   },
   {
-    "id": 48,
-    "question": "Ebitda es un indicador de:",
+    "id": "FIN-20",
+    "bank": "financiera",
+    "tema": "Flujo de caja",
+    "nivel": "medio",
+    "question": "Una empresa rentable puede quebrar principalmente por:",
     "options": [
-      "Liquidez",
-      "Rentabilidad",
-      "Actividad",
-      "Generación de valor"
+      "Pagar impuestos",
+      "Iliquidez: cartera e inventarios crecen más rápido que la generación de caja",
+      "Tener EBITDA positivo",
+      "Repartir pocas utilidades"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "«Utilidad es opinión, caja es realidad»: el crecimiento desordenado del capital de trabajo asfixia la tesorería"
   },
   {
-    "id": 49,
-    "question": "La materialidad (importancia relativa) se usa principalmente para:",
-    "options": [
-      "Calcular impuestos y sanciones.",
-      "Definir el alcance, naturaleza y oportunidad de los procedimientos de auditoría, y evaluar el efecto de incorrecciones identificadas.",
-      "Determinar el valor de mercado de la empresa.",
-      "Medir la rentabilidad del negocio."
-    ],
-    "answer": 1
+    "id": "FIN-21",
+    "bank": "financiera",
+    "tema": "Flujo de caja",
+    "nivel": "complejo",
+    "question": "Ventas de $1.000 crecerán 30% y el KTNO equivale al 20% de las ventas. La inversión adicional de caja en capital de trabajo será:",
+    "options": ["$300", "$60", "$200", "$26"],
+    "answer": 1,
+    "reference": "Δ ventas = $300 × 20% = $60; el crecimiento exige financiar más cartera e inventarios"
   },
   {
-    "id": 50,
-    "question": "¿Qué norma (NIA) trata la planeación de la auditoría de estados financieros?",
+    "id": "FIN-22",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "basico",
+    "question": "Como gestores financieros, nos interesa que el WACC sea:",
     "options": [
-      "NIA 200",
-      "NIA 300",
-      "NIA 315",
-      "NIA 500"
+      "Cada vez más alto",
+      "Cada vez más bajo",
+      "Que no haya variación",
+      "Que sea igual al IPC pero nunca mayor al SMMLV"
     ],
-    "answer": 1
+    "answer": 1,
+    "reference": "Un menor costo de capital eleva el valor presente de los flujos y amplía los proyectos viables"
+  },
+  {
+    "id": "FIN-23",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "basico",
+    "question": "WACC significa:",
+    "options": [
+      "Tasa de interés del Banco de la República",
+      "Costo promedio ponderado de las fuentes de financiación (deuda y patrimonio)",
+      "Rentabilidad mínima de los proveedores",
+      "Tasa de usura certificada"
+    ],
+    "answer": 1,
+    "reference": "Weighted Average Cost of Capital: Kd(1−t)×%D + Ke×%E"
+  },
+  {
+    "id": "FIN-24",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "medio",
+    "question": "Si el WACC aumenta, la valoración de la empresa será:",
+    "options": [
+      "Mejor",
+      "Peor",
+      "Nada tiene que ver",
+      "Depende de indicadores como IPC y aumentos del SMMLV"
+    ],
+    "answer": 1,
+    "reference": "A mayor tasa de descuento, menor valor presente de los flujos futuros"
+  },
+  {
+    "id": "FIN-25",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "medio",
+    "question": "El costo de la deuda después de impuestos en Colombia (persona jurídica régimen general) se calcula como:",
+    "options": ["Kd × (1 − 35%)", "Kd × 35%", "Kd + 35%", "Kd sin ajuste"],
+    "answer": 0,
+    "reference": "Los intereses son deducibles (con límites de subcapitalización, Art. 118-1 ET); tarifa general de renta 35%, Art. 240 ET"
+  },
+  {
+    "id": "FIN-26",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "medio",
+    "question": "Un VPN mayor que cero significa que:",
+    "options": [
+      "El proyecto rinde exactamente la tasa de descuento",
+      "El proyecto crea valor: rinde más que la tasa de descuento exigida",
+      "El proyecto es inviable",
+      "La TIR es negativa"
+    ],
+    "answer": 1,
+    "reference": "VPN > 0 ⇒ TIR > tasa de descuento (en flujos convencionales)"
+  },
+  {
+    "id": "FIN-27",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "medio",
+    "question": "¿Con qué tasa se descuenta el flujo de caja libre para valorar la empresa (enterprise value)?",
+    "options": ["El costo del patrimonio (Ke)", "El WACC", "La DTF", "La tasa de usura"],
+    "answer": 1,
+    "reference": "El FCL pertenece a acreedores y accionistas; se descuenta al costo ponderado de ambos"
+  },
+  {
+    "id": "FIN-28",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "complejo",
+    "question": "¿Cuál de las siguientes situaciones destruye valor para los accionistas?",
+    "options": ["TIR > WACC", "WACC > ROA", "ROA > TIR", "TIR > ROA"],
+    "answer": 1,
+    "reference": "Si los activos rentan menos que el costo de financiarlos, cada peso invertido destruye valor (equivalente a ROIC < WACC)"
+  },
+  {
+    "id": "FIN-29",
+    "bank": "financiera",
+    "tema": "Costo capital",
+    "nivel": "complejo",
+    "question": "En un DCF, el gradiente de crecimiento (g) del valor terminal:",
+    "options": [
+      "Debe ser lo más alto posible",
+      "No debería superar el crecimiento nominal de largo plazo de la economía",
+      "Siempre es igual al IPC",
+      "Es irrelevante en la valoración"
+    ],
+    "answer": 1,
+    "reference": "Una empresa no puede crecer a perpetuidad más que la economía; el valor terminal suele pesar >50% del valor total"
+  },
+  {
+    "id": "FIN-30",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "basico",
+    "question": "Debes un impuesto a la DIAN cuya mora causa interés del 25% anual. Un banco ofrece crédito al 35% para pagarlo (sin riesgo penal). ¿Cuál deuda conviene mantener?",
+    "options": [
+      "La deuda con la DIAN (25%)",
+      "El crédito bancario (35%)",
+      "Son financieramente equivalentes",
+      "No pagar ninguna de las dos"
+    ],
+    "answer": 0,
+    "reference": "A igualdad de condiciones se conserva la deuda más barata; además la DIAN ofrece facilidades de pago (Art. 814 ET)"
+  },
+  {
+    "id": "FIN-31",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "basico",
+    "question": "El confirming es:",
+    "options": [
+      "La venta de la cartera de clientes a un tercero",
+      "Un mecanismo donde una entidad financiera paga a los proveedores de la empresa (factoring inverso)",
+      "Un crédito hipotecario",
+      "Una inversión temporal"
+    ],
+    "answer": 1,
+    "reference": "El factoring anticipa el cobro de cartera propia; el confirming gestiona/anticipa el pago a proveedores"
+  },
+  {
+    "id": "FIN-32",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "medio",
+    "question": "Si una empresa quiere quedarse con un activo productivo luego de su uso, se recomienda:",
+    "options": ["Leasing", "Renting", "Crédito tradicional", "Confirming"],
+    "answer": 0,
+    "reference": "El leasing financiero pacta opción de adquisición al final del contrato; el renting no la contempla (beneficios: Art. 127-1 ET)"
+  },
+  {
+    "id": "FIN-33",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "medio",
+    "question": "¿Un crédito a una tasa del 3% mensual es mejor que un crédito a una tasa del 36% efectivo anual?",
+    "options": ["Sí", "No", "Es lo mismo", "Depende del crédito"],
+    "answer": 1,
+    "reference": "3% MV equivale a (1,03)^12 − 1 = 42,58% EA, superior al 36% EA"
+  },
+  {
+    "id": "FIN-34",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "medio",
+    "question": "La diferencia entre tasa nominal y tasa efectiva anual radica en:",
+    "options": [
+      "La moneda del crédito",
+      "La capitalización de los intereses en el periodo",
+      "El plazo del crédito",
+      "La entidad que la cobra"
+    ],
+    "answer": 1,
+    "reference": "La efectiva incorpora el interés compuesto de las capitalizaciones periódicas; es la base correcta de comparación"
+  },
+  {
+    "id": "FIN-35",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "medio",
+    "question": "El IBR es:",
+    "options": [
+      "El impuesto a la renta bancaria",
+      "El indicador bancario de referencia del mercado monetario colombiano, publicado por el Banco de la República",
+      "La tasa de usura",
+      "El índice bursátil de la BVC"
+    ],
+    "answer": 1,
+    "reference": "Ha reemplazado a la DTF como tasa de referencia para créditos corporativos indexados (IBR + spread)"
+  },
+  {
+    "id": "FIN-36",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "medio",
+    "question": "La diferencia clave entre leasing financiero y leasing operativo es:",
+    "options": [
+      "El financiero no genera intereses",
+      "El financiero pacta opción de compra y transfiere sustancialmente riesgos y beneficios del activo",
+      "El operativo es solo para vehículos",
+      "No existe diferencia"
+    ],
+    "answer": 1,
+    "reference": "Bajo NIIF 16 (grupo 1) el arrendatario reconoce activo por derecho de uso y pasivo; en NIIF PYMES aplica Sección 20"
+  },
+  {
+    "id": "FIN-37",
+    "bank": "financiera",
+    "tema": "Financiación",
+    "nivel": "complejo",
+    "question": "Un crédito al 24% nominal anual mes vencido equivale a una tasa efectiva anual de:",
+    "options": ["24,00%", "26,82%", "28,32%", "22,10%"],
+    "answer": 1,
+    "reference": "Tasa periódica = 24%/12 = 2% mensual; EA = (1,02)^12 − 1 = 26,82%"
+  },
+  {
+    "id": "REV-01",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "Según el artículo 203 del Código de Comercio, están obligadas a tener revisor fiscal:",
+    "options": [
+      "Únicamente las sociedades vigiladas por la Superintendencia de Sociedades",
+      "Las sociedades por acciones, las sucursales de compañías extranjeras y las sociedades en las que lo soliciten socios excluidos de la administración que representen no menos del 20% del capital",
+      "Todas las sociedades comerciales, sin excepción",
+      "Solo las sociedades que coticen sus acciones en bolsa de valores"
+    ],
+    "answer": 1,
+    "reference": "Art. 203 del Código de Comercio"
+  },
+  {
+    "id": "REV-02",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "De acuerdo con el parágrafo 2 del artículo 13 de la Ley 43 de 1990, es obligatorio tener revisor fiscal en todas las sociedades comerciales, de cualquier naturaleza, cuyos:",
+    "options": [
+      "Activos brutos excedan 30.000 SMMLV o que tengan más de 200 trabajadores",
+      "Ingresos brutos excedan 5.000 SMMLV y activos brutos excedan 3.000 SMMLV",
+      "Activos brutos al 31 de diciembre del año inmediatamente anterior sean o excedan el equivalente a 5.000 SMMLV y/o cuyos ingresos brutos durante el año inmediatamente anterior sean o excedan 3.000 SMMLV",
+      "Patrimonios líquidos excedan 10.000 SMMLV al cierre del ejercicio"
+    ],
+    "answer": 2,
+    "reference": "Ley 43 de 1990, art. 13, parágrafo 2"
+  },
+  {
+    "id": "REV-03",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "La elección del revisor fiscal en una sociedad anónima corresponde a:",
+    "options": [
+      "La junta directiva, por mayoría simple de sus miembros",
+      "La asamblea general de accionistas, con la mayoría absoluta de la asamblea",
+      "El representante legal, con visto bueno de la junta directiva",
+      "La superintendencia que ejerza la vigilancia de la sociedad"
+    ],
+    "answer": 1,
+    "reference": "Art. 204 del Código de Comercio"
+  },
+  {
+    "id": "REV-04",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "Respecto del período del revisor fiscal, el Código de Comercio establece que:",
+    "options": [
+      "Es de dos años fijos, sin posibilidad de remoción anticipada",
+      "Será igual al del gerente, y solo puede removerse por justa causa",
+      "Será igual al de la junta directiva, pero podrá ser removido en cualquier tiempo por la asamblea o junta de socios",
+      "Es indefinido mientras conserve la confianza de la administración"
+    ],
+    "answer": 2,
+    "reference": "Art. 206 del Código de Comercio"
+  },
+  {
+    "id": "REV-05",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "avanzado",
+    "question": "Conforme al artículo 205 del Código de Comercio, ¿cuál de las siguientes personas SÍ podría ser designada revisor fiscal de una sociedad?",
+    "options": [
+      "Un contador público independiente, sin vínculo de asociación, parentesco ni otro cargo en la compañía o sus subordinadas",
+      "Un asociado de la misma compañía o de alguna de sus subordinadas",
+      "El cónyuge del gerente de la sociedad",
+      "Quien desempeñe en la misma compañía cualquier otro cargo"
+    ],
+    "answer": 0,
+    "reference": "Art. 205 del Código de Comercio (inhabilidades: asociados de la compañía o sus subordinadas; parentesco dentro del 4º grado de consanguinidad, 1º civil o 2º de afinidad con administradores y funcionarios directivos, cajero, auditor o contador; quienes desempeñen otro cargo en la misma compañía)"
+  },
+  {
+    "id": "REV-06",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "Ninguna persona puede ejercer el cargo de revisor fiscal en más de:",
+    "options": [
+      "Tres sociedades comerciales de cualquier tipo",
+      "Diez sociedades por acciones",
+      "No existe límite legal alguno",
+      "Cinco sociedades por acciones"
+    ],
+    "answer": 3,
+    "reference": "Art. 215 del Código de Comercio"
+  },
+  {
+    "id": "REV-07",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "Cuando las circunstancias lo exijan, a juicio de la asamblea o junta de socios, el revisor fiscal podrá tener auxiliares u otros colaboradores. Estos son:",
+    "options": [
+      "Nombrados y removidos libremente por el revisor fiscal, y obran bajo su dirección y responsabilidad",
+      "Nombrados y removidos por la asamblea, y responden directamente ante ella",
+      "Nombrados por la junta directiva y supervisados por el gerente",
+      "Contratados por la administración como empleados de la sociedad, bajo subordinación del gerente"
+    ],
+    "answer": 0,
+    "reference": "Art. 210 del Código de Comercio"
+  },
+  {
+    "id": "REV-08",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "En las reuniones de la asamblea de accionistas, el revisor fiscal tiene derecho a:",
+    "options": [
+      "Intervenir con voz y voto en todas las decisiones",
+      "Ser convocado e intervenir con voz, pero sin voto",
+      "Asistir únicamente cuando la administración lo invite",
+      "Votar exclusivamente la aprobación de los estados financieros"
+    ],
+    "answer": 1,
+    "reference": "Art. 213 del Código de Comercio (voz sin voto; además, derecho de inspeccionar en cualquier tiempo libros, actas, correspondencia y comprobantes)"
+  },
+  {
+    "id": "REV-09",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "Cuando se designa como revisor fiscal a una asociación o firma de contadores, ésta debe:",
+    "options": [
+      "Delegar la función en cualquier profesional de la firma, sin requisito de tarjeta profesional",
+      "Actuar exclusivamente a través de su representante legal",
+      "Nombrar un contador público para cada revisoría, quien desempeñará personalmente el cargo",
+      "Rotar obligatoriamente al equipo cada seis meses"
+    ],
+    "answer": 2,
+    "reference": "Art. 215 del Código de Comercio y Ley 43 de 1990, art. 4 (la revisoría fiscal solo puede ser ejercida por contadores públicos)"
+  },
+  {
+    "id": "REV-10",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "avanzado",
+    "question": "De acuerdo con el DUR 2420 de 2015 (modificado por el Decreto 2132 de 2016), están obligados a aplicar las NIA en su trabajo sobre estados financieros los revisores fiscales que presten servicios a:",
+    "options": [
+      "Todas las entidades sin excepción, incluidas las microempresas del Grupo 3",
+      "Únicamente entidades vigiladas por la Superintendencia Financiera",
+      "Entidades del Grupo 1, y entidades del Grupo 2 que tengan más de 30.000 SMMLV de activos o más de 200 trabajadores",
+      "Entidades con activos brutos superiores a 5.000 SMMLV o ingresos superiores a 3.000 SMMLV"
+    ],
+    "answer": 2,
+    "reference": "DUR 2420 de 2015, art. 1.2.1.2, modificado por el Decreto 2132 de 2016. Para las funciones de los numerales 1 y 3 del art. 209 C.Co. se aplica la ISAE 3000"
+  },
+  {
+    "id": "REV-11",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "avanzado",
+    "question": "El Anexo 4 del DUR 2420 de 2015 contiene el marco técnico normativo de las Normas de Aseguramiento de la Información (NAI), integrado por:",
+    "options": [
+      "Únicamente las Normas Internacionales de Auditoría (NIA)",
+      "Las NIIF plenas, las NIIF para pymes y el marco de contabilidad simplificada",
+      "Las Normas de Auditoría Generalmente Aceptadas (NAGA) del art. 7 de la Ley 43 de 1990",
+      "El Código de Ética IESBA, la NICC 1, las NIA, las NITR, las ISAE y las NISR"
+    ],
+    "answer": 3,
+    "reference": "DUR 2420 de 2015, Anexo 4 (Decreto 302 de 2015, incorporado y actualizado)"
+  },
+  {
+    "id": "REV-12",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "intermedio",
+    "question": "Según la Ley 222 de 1995, los estados financieros dictaminados son aquellos:",
+    "options": [
+      "Firmados únicamente por el representante legal",
+      "Aprobados por la asamblea sin necesidad de firmas adicionales",
+      "Preparados por un contador independiente distinto del preparador",
+      "Certificados por el representante legal y el contador, y acompañados de la opinión profesional del revisor fiscal"
+    ],
+    "answer": 3,
+    "reference": "Ley 222 de 1995, art. 38 (en concordancia con el art. 37, certificación)"
+  },
+  {
+    "id": "REV-13",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "avanzado",
+    "question": "Conforme al artículo 7 de la Ley 1474 de 2011 (Estatuto Anticorrupción), cuando el revisor fiscal conoce presuntos actos de corrupción o delitos contra la administración pública, el orden económico y social o el patrimonio económico:",
+    "options": [
+      "Debe abstenerse de denunciar, amparado en el secreto profesional",
+      "Solo debe informarlos a la asamblea de accionistas en la reunión ordinaria",
+      "Debe denunciarlos ante las autoridades competentes dentro de los seis meses siguientes al conocimiento del hecho, sin que le sea oponible el secreto profesional; su omisión es causal de cancelación de la inscripción",
+      "Debe renunciar al cargo de inmediato, sin obligación de denuncia"
+    ],
+    "answer": 2,
+    "reference": "Ley 1474 de 2011, art. 7, que adicionó el numeral 5 al art. 26 de la Ley 43 de 1990"
+  },
+  {
+    "id": "REV-14",
+    "bank": "revisoria",
+    "tema": "Marco legal y normativo",
+    "nivel": "avanzado",
+    "question": "En materia de prevención de lavado de activos y contrabando, el revisor fiscal tiene la obligación legal de:",
+    "options": [
+      "Reportar las operaciones catalogadas como sospechosas a la UIAF y denunciar ante autoridades competentes los presuntos delitos que detecte en ejercicio de su cargo",
+      "Reportar únicamente a la administración de la entidad, que decide si informa a la UIAF",
+      "Guardar reserva absoluta, salvo orden judicial",
+      "Reportar solo si la entidad está obligada a implementar SAGRILAFT"
+    ],
+    "answer": 0,
+    "reference": "Ley 1762 de 2015, art. 27; en concordancia con el art. 32 de la Ley 1778 de 2016"
+  },
+  {
+    "id": "REV-15",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "Según la NIA 200, el objetivo global de una auditoría de estados financieros es obtener:",
+    "options": [
+      "Seguridad razonable de que los estados financieros en su conjunto están libres de incorrección material, debida a fraude o error",
+      "Seguridad absoluta de que los estados financieros no contienen errores",
+      "Certeza de que la entidad continuará operando indefinidamente",
+      "Garantía de que no existió fraude en la entidad durante el período"
+    ],
+    "answer": 0,
+    "reference": "NIA 200, párr. 11"
+  },
+  {
+    "id": "REV-16",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "El escepticismo profesional se define como:",
+    "options": [
+      "La desconfianza permanente en la administración de la entidad",
+      "La obligación de verificar el 100% de las transacciones",
+      "La presunción de que la administración siempre actúa de mala fe",
+      "Una actitud que incluye una mente inquisitiva, atención a condiciones que puedan indicar posibles incorrecciones y una valoración crítica de la evidencia de auditoría"
+    ],
+    "answer": 3,
+    "reference": "NIA 200, párr. 13(l)"
+  },
+  {
+    "id": "REV-17",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "De acuerdo con la NIA 210, los términos del encargo de auditoría acordados con la entidad deben constar en:",
+    "options": [
+      "El acta de la asamblea que designa al auditor",
+      "Una carta de encargo u otra forma adecuada de acuerdo escrito",
+      "Un correo electrónico informal, sin requisito de contenido",
+      "No es necesario documentarlos si existe relación previa"
+    ],
+    "answer": 1,
+    "reference": "NIA 210, párr. 10"
+  },
+  {
+    "id": "REV-18",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "avanzado",
+    "question": "Según la NIA 230, la documentación de auditoría debe ser suficiente para permitir que:",
+    "options": [
+      "Cualquier tercero replique la auditoría sin acceso a la entidad",
+      "Un auditor experimentado, sin conocimiento previo de la auditoría, comprenda los procedimientos aplicados, sus resultados, la evidencia obtenida y las cuestiones significativas con sus conclusiones",
+      "La administración de la entidad valide las conclusiones del auditor",
+      "El organismo de inspección reconstruya la contabilidad de la entidad"
+    ],
+    "answer": 1,
+    "reference": "NIA 230, párr. 8"
+  },
+  {
+    "id": "REV-19",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "Conforme a la NIA 240, la responsabilidad principal en la prevención y detección del fraude recae en:",
+    "options": [
+      "El revisor fiscal o auditor externo",
+      "La administración y los responsables del gobierno de la entidad",
+      "El contador de la entidad",
+      "La auditoría interna"
+    ],
+    "answer": 1,
+    "reference": "NIA 240, párr. 4"
+  },
+  {
+    "id": "REV-20",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "avanzado",
+    "question": "Para el auditor, los dos tipos de incorrecciones intencionadas relevantes según la NIA 240 son:",
+    "options": [
+      "Errores aritméticos y errores de clasificación",
+      "El lavado de activos y la evasión fiscal",
+      "Las omisiones de revelación y los cambios de políticas contables",
+      "Las incorrecciones debidas a información financiera fraudulenta y las debidas a apropiación indebida de activos"
+    ],
+    "answer": 3,
+    "reference": "NIA 240, párr. 3"
+  },
+  {
+    "id": "REV-21",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "El objetivo de la NIA 315 es que el auditor:",
+    "options": [
+      "Diseñe la opinión que emitirá al cierre del ejercicio",
+      "Determine los honorarios en función del riesgo del cliente",
+      "Confirme los saldos con terceros al inicio del trabajo",
+      "Identifique y valore los riesgos de incorrección material mediante el conocimiento de la entidad y su entorno, incluido su control interno"
+    ],
+    "answer": 3,
+    "reference": "NIA 315 (Revisada)"
+  },
+  {
+    "id": "REV-22",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "avanzado",
+    "question": "La materialidad (importancia relativa) para la ejecución del trabajo se define como:",
+    "options": [
+      "El monto a partir del cual toda incorrección debe reportarse a la superintendencia",
+      "La cifra o cifras determinadas por el auditor, por debajo de la materialidad para los estados financieros en su conjunto, para reducir a un nivel adecuadamente bajo la probabilidad de que la suma de incorrecciones no corregidas y no detectadas supere la materialidad global",
+      "El 5% de la utilidad antes de impuestos, en todos los casos",
+      "El umbral que fija la administración para el registro de ajustes"
+    ],
+    "answer": 1,
+    "reference": "NIA 320, párr. 9. Los porcentajes de referencia son juicio profesional, no reglas fijas"
+  },
+  {
+    "id": "REV-23",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "avanzado",
+    "question": "Si al valorar los componentes del riesgo de auditoría el auditor concluye que el riesgo inherente y el riesgo de control son altos, para mantener el riesgo de auditoría en un nivel aceptablemente bajo debe:",
+    "options": [
+      "Aumentar el riesgo de detección permitido",
+      "Retirarse del encargo de manera obligatoria",
+      "Confiar en los controles sin realizar pruebas sustantivas",
+      "Reducir el riesgo de detección, ampliando la naturaleza, momento y extensión de los procedimientos sustantivos"
+    ],
+    "answer": 3,
+    "reference": "NIA 200, párr. A36-A44, y NIA 330 (modelo: RA = RIM (RI × RC) × RD)"
+  },
+  {
+    "id": "REV-24",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "Según la NIA 500, la evidencia de auditoría debe ser:",
+    "options": [
+      "Suficiente (medida cuantitativa) y adecuada (medida cualitativa: relevancia y fiabilidad)",
+      "Suficiente (medida cualitativa) y adecuada (medida cuantitativa)",
+      "Documental en todos los casos, descartando la evidencia verbal",
+      "Generada exclusivamente por fuentes internas de la entidad"
+    ],
+    "answer": 0,
+    "reference": "NIA 500, párr. 5"
+  },
+  {
+    "id": "REV-25",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "En un procedimiento de confirmación externa (NIA 505), el auditor debe:",
+    "options": [
+      "Permitir que la administración envíe y reciba las confirmaciones para agilizar el proceso",
+      "Aceptar sin más procedimientos las respuestas recibidas por la gerencia",
+      "Confirmar únicamente los saldos de cuentas por pagar",
+      "Mantener el control sobre las solicitudes de confirmación y sobre las respuestas recibidas"
+    ],
+    "answer": 3,
+    "reference": "NIA 505, párr. 7"
+  },
+  {
+    "id": "REV-26",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "avanzado",
+    "question": "Respecto de los hechos posteriores al cierre, la NIA 560 exige al auditor:",
+    "options": [
+      "Actualizar indefinidamente su informe por hechos conocidos después de su emisión",
+      "Aplicar procedimientos para identificar los hechos ocurridos entre la fecha de los estados financieros y la fecha del informe de auditoría que requieran ajuste o revelación",
+      "Ignorar todo hecho posterior a la fecha de cierre del ejercicio",
+      "Aplicar procedimientos únicamente si la administración lo solicita"
+    ],
+    "answer": 1,
+    "reference": "NIA 560, párr. 6-7. Después de la fecha del informe no hay obligación de procedimientos, pero sí de actuar si llegan a su conocimiento hechos relevantes"
+  },
+  {
+    "id": "REV-27",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "avanzado",
+    "question": "En relación con la hipótesis de empresa en funcionamiento (NIA 570), la evaluación de la administración debe cubrir como mínimo:",
+    "options": [
+      "Seis meses desde la fecha del informe de auditoría",
+      "Veinticuatro meses desde la fecha de aprobación de los estados financieros",
+      "Doce meses desde la fecha de los estados financieros",
+      "El tiempo que la administración considere razonable, sin mínimo alguno"
+    ],
+    "answer": 2,
+    "reference": "NIA 570 (Revisada), párr. 13. Si existe incertidumbre material adecuadamente revelada, la opinión no se modifica, pero se incluye la sección «Incertidumbre material relacionada con la Empresa en funcionamiento»"
+  },
+  {
+    "id": "REV-28",
+    "bank": "revisoria",
+    "tema": "NIA y aseguramiento",
+    "nivel": "intermedio",
+    "question": "La carta de manifestaciones escritas de la administración (NIA 580) debe tener fecha:",
+    "options": [
+      "Tan próxima como sea posible a la fecha del informe de auditoría, pero nunca posterior a éste",
+      "Anterior al cierre del ejercicio auditado",
+      "Igual a la de la asamblea que aprueba los estados financieros",
+      "Libre, pues es un documento meramente informativo"
+    ],
+    "answer": 0,
+    "reference": "NIA 580, párr. 14"
+  },
+  {
+    "id": "REV-29",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "intermedio",
+    "question": "Los cinco principios fundamentales del Código de Ética para profesionales de la contabilidad (IESBA, Anexo 4 del DUR 2420 de 2015) son:",
+    "options": [
+      "Honestidad, lealtad, prudencia, transparencia y legalidad",
+      "Independencia, planeación, supervisión, evidencia y dictamen",
+      "Integridad, independencia, materialidad, escepticismo y documentación",
+      "Integridad, objetividad, competencia y diligencia profesionales, confidencialidad y comportamiento profesional"
+    ],
+    "answer": 3,
+    "reference": "Código de Ética IESBA, sección 110 (Anexo 4, DUR 2420 de 2015)"
+  },
+  {
+    "id": "REV-30",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "avanzado",
+    "question": "El revisor fiscal que audita cifras derivadas de un servicio de asesoría contable prestado por él mismo a la entidad enfrenta principalmente una amenaza de:",
+    "options": [
+      "Intimidación",
+      "Autorrevisión",
+      "Familiaridad",
+      "Abogacía (defensa de intereses)"
+    ],
+    "answer": 1,
+    "reference": "Código de Ética IESBA, sección 120.6 A3. Además, en Colombia esta situación es incompatible con la revisoría fiscal (art. 205 C.Co. y Ley 43 de 1990, arts. 50-51)"
+  },
+  {
+    "id": "REV-31",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "intermedio",
+    "question": "Las cinco categorías de amenazas al cumplimiento de los principios fundamentales según el Código IESBA son:",
+    "options": [
+      "Fraude, error, colusión, omisión y negligencia",
+      "Inherente, de control, de detección, de negocio y reputacional",
+      "Interés propio, autorrevisión, abogacía, familiaridad e intimidación",
+      "Legal, contractual, financiera, operativa y tecnológica"
+    ],
+    "answer": 2,
+    "reference": "Código de Ética IESBA, sección 120.6 A3"
+  },
+  {
+    "id": "REV-32",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "intermedio",
+    "question": "La independencia del auditor comprende dos dimensiones:",
+    "options": [
+      "Independencia contractual e independencia económica",
+      "Independencia mental (de hecho) e independencia aparente (en apariencia)",
+      "Independencia estatutaria e independencia funcional",
+      "Independencia técnica e independencia administrativa"
+    ],
+    "answer": 1,
+    "reference": "Código de Ética IESBA, sección 400.5; en concordancia con la Ley 43 de 1990, art. 37.3"
+  },
+  {
+    "id": "REV-33",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "intermedio",
+    "question": "De acuerdo con el artículo 9 de la Ley 43 de 1990, los papeles de trabajo deben conservarse por un término mínimo de:",
+    "options": [
+      "Dos años contados desde la emisión del dictamen",
+      "Diez años contados desde el cierre del ejercicio",
+      "Un año, si la entidad no es vigilada",
+      "Cinco años contados a partir de la fecha de su elaboración"
+    ],
+    "answer": 3,
+    "reference": "Ley 43 de 1990, art. 9 (los papeles de trabajo están sujetos a reserva y solo pueden ser examinados en los casos previstos en la ley)"
+  },
+  {
+    "id": "REV-34",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "intermedio",
+    "question": "El tribunal disciplinario de la profesión contable en Colombia es:",
+    "options": [
+      "El Consejo Técnico de la Contaduría Pública (CTCP)",
+      "La Superintendencia de Sociedades",
+      "La Junta Central de Contadores (JCC)",
+      "La DIAN"
+    ],
+    "answer": 2,
+    "reference": "Ley 43 de 1990, art. 20"
+  },
+  {
+    "id": "REV-35",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "avanzado",
+    "question": "Las sanciones que puede imponer la Junta Central de Contadores son:",
+    "options": [
+      "Únicamente multas de hasta 100 SMMLV",
+      "Prisión de uno a cinco años e inhabilidad para contratar",
+      "Amonestación, multas sucesivas hasta de 5 SMMLV, suspensión de la inscripción hasta por un año y cancelación de la inscripción",
+      "Únicamente la cancelación definitiva de la tarjeta profesional"
+    ],
+    "answer": 2,
+    "reference": "Ley 43 de 1990, arts. 23 a 26"
+  },
+  {
+    "id": "REV-36",
+    "bank": "revisoria",
+    "tema": "Ética e independencia",
+    "nivel": "avanzado",
+    "question": "Respecto del secreto profesional del revisor fiscal, es correcto afirmar que:",
+    "options": [
+      "Debe guardarse la reserva sobre los actos y hechos conocidos en ejercicio del cargo, pero cede ante los deberes legales de denuncia y reporte (p. ej., Ley 1474 de 2011 y reportes a la UIAF)",
+      "Es absoluto y no admite excepción alguna",
+      "Solo puede levantarse con autorización escrita del gerente de la entidad",
+      "No existe para el revisor fiscal, quien puede divulgar libremente la información de la entidad"
+    ],
+    "answer": 0,
+    "reference": "Art. 214 del Código de Comercio; Ley 43 de 1990, arts. 63-67; Ley 1474 de 2011, art. 7"
+  },
+  {
+    "id": "REV-37",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "intermedio",
+    "question": "Los cinco componentes del control interno según el marco COSO 2013 son:",
+    "options": [
+      "Ambiente de control, evaluación de riesgos, actividades de control, información y comunicación, y actividades de monitoreo",
+      "Planeación, organización, dirección, coordinación y control",
+      "Gobierno, estrategia, desempeño, revisión e información",
+      "Prevención, detección, corrección, disuasión y compensación"
+    ],
+    "answer": 0,
+    "reference": "COSO, Marco Integrado de Control Interno 2013"
+  },
+  {
+    "id": "REV-38",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "intermedio",
+    "question": "En el marco COSO 2013, el componente que constituye la base o fundamento de los demás es:",
+    "options": [
+      "Las actividades de control",
+      "El ambiente de control",
+      "La información y comunicación",
+      "El monitoreo"
+    ],
+    "answer": 1,
+    "reference": "COSO 2013. El ambiente de control (integridad, valores éticos, estructura, competencia, rendición de cuentas) soporta los demás componentes"
+  },
+  {
+    "id": "REV-39",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "intermedio",
+    "question": "El marco COSO 2013 desarrolla sus cinco componentes a través de:",
+    "options": ["10 principios", "20 objetivos", "17 principios", "8 elementos del ERM"],
+    "answer": 2,
+    "reference": "COSO 2013: 17 principios asociados a los 5 componentes"
+  },
+  {
+    "id": "REV-40",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "avanzado",
+    "question": "Conforme a la NIA 265, las deficiencias significativas de control interno identificadas durante la auditoría deben comunicarse:",
+    "options": [
+      "Verbalmente al contador de la entidad",
+      "Únicamente en el dictamen sobre los estados financieros",
+      "A la superintendencia de vigilancia, antes que a la entidad",
+      "Por escrito y oportunamente a los responsables del gobierno de la entidad"
+    ],
+    "answer": 3,
+    "reference": "NIA 265, párr. 9. Para el revisor fiscal, en concordancia con los numerales 2 y 5 del art. 207 C.Co. (dar cuenta oportuna de irregularidades)"
+  },
+  {
+    "id": "REV-41",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "intermedio",
+    "question": "La conciliación bancaria mensual elaborada y revisada por personas distintas de quien registra es, principalmente, un control de tipo:",
+    "options": ["Preventivo", "Correctivo", "Detectivo", "Compensatorio"],
+    "answer": 2,
+    "reference": "Clasificación de controles: los detectivos identifican errores o irregularidades ya ocurridos (p. ej., conciliaciones, arqueos, inventarios físicos)"
+  },
+  {
+    "id": "REV-42",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "avanzado",
+    "question": "Una adecuada segregación de funciones exige que NO se concentren en una misma persona las funciones de:",
+    "options": [
+      "Planeación estratégica y ejecución presupuestal",
+      "Autorización, custodia de activos y registro contable de las operaciones",
+      "Ventas y mercadeo",
+      "Elaboración y aprobación del plan de auditoría"
+    ],
+    "answer": 1,
+    "reference": "Principio básico de control interno; COSO 2013, principio 10 (actividades de control)"
+  },
+  {
+    "id": "REV-43",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "intermedio",
+    "question": "El riesgo de control se define como el riesgo de que:",
+    "options": [
+      "Una incorrección material no sea prevenida, o detectada y corregida oportunamente, por el control interno de la entidad",
+      "El auditor no detecte una incorrección material con sus procedimientos",
+      "Los estados financieros contengan errores antes de considerar los controles",
+      "La entidad incumpla sus presupuestos operativos"
+    ],
+    "answer": 0,
+    "reference": "NIA 200, párr. 13(n)"
+  },
+  {
+    "id": "REV-44",
+    "bank": "revisoria",
+    "tema": "Control interno",
+    "nivel": "avanzado",
+    "question": "Según el artículo 209 del Código de Comercio, el informe del revisor fiscal a la asamblea debe expresar, entre otros:",
+    "options": [
+      "El detalle de los honorarios pagados a los asesores externos",
+      "La proyección financiera de la entidad para el siguiente ejercicio",
+      "Si los actos de los administradores se ajustan a los estatutos y a las órdenes de la asamblea, si la correspondencia, los comprobantes y los libros se llevan y conservan debidamente, y si hay y son adecuadas las medidas de control interno y de conservación y custodia de los bienes",
+      "La calificación del desempeño individual de cada administrador"
+    ],
+    "answer": 2,
+    "reference": "Art. 209 del Código de Comercio"
+  },
+  {
+    "id": "REV-45",
+    "bank": "revisoria",
+    "tema": "Informes y responsabilidades",
+    "nivel": "avanzado",
+    "question": "El dictamen del revisor fiscal sobre los balances generales debe expresar, por lo menos (art. 208 C.Co.):",
+    "options": [
+      "Si obtuvo las informaciones necesarias, si siguió los procedimientos aconsejados por la técnica de interventoría de cuentas, si la contabilidad se lleva conforme a las normas legales y a la técnica contable, si el balance presenta en forma fidedigna la situación financiera y el estado de pérdidas y ganancias refleja el resultado de las operaciones, y las reservas o salvedades sobre la fidelidad de los estados financieros",
+      "Únicamente la opinión sobre la razonabilidad de las cifras, sin referencias adicionales",
+      "El análisis de indicadores financieros y las recomendaciones de gestión",
+      "La certificación de la exactitud de todas las cifras y la garantía de ausencia de fraude"
+    ],
+    "answer": 0,
+    "reference": "Art. 208 del Código de Comercio"
+  },
+  {
+    "id": "REV-46",
+    "bank": "revisoria",
+    "tema": "Informes y responsabilidades",
+    "nivel": "avanzado",
+    "question": "Según la NIA 705, cuando el auditor concluye que existen incorrecciones materiales Y generalizadas en los estados financieros, debe expresar una opinión:",
+    "options": [
+      "Desfavorable (adversa)",
+      "Con salvedades",
+      "Denegada (abstención de opinión)",
+      "No modificada con párrafo de énfasis"
+    ],
+    "answer": 0,
+    "reference": "NIA 705, párr. 8. Los tres tipos de opinión modificada son: con salvedades, desfavorable y denegación (abstención); la denegación procede ante imposibilidad de obtener evidencia con efectos materiales y generalizados"
+  },
+  {
+    "id": "REV-47",
+    "bank": "revisoria",
+    "tema": "Informes y responsabilidades",
+    "nivel": "intermedio",
+    "question": "Un párrafo de énfasis (NIA 706) se utiliza para:",
+    "options": [
+      "Modificar la opinión cuando hay incorrecciones materiales",
+      "Sustituir la revelación que la administración omitió en las notas",
+      "Describir las responsabilidades de la administración",
+      "Llamar la atención sobre una cuestión presentada o revelada adecuadamente en los estados financieros que, a juicio del auditor, es fundamental para su comprensión, sin modificar la opinión"
+    ],
+    "answer": 3,
+    "reference": "NIA 706, párr. 8"
+  },
+  {
+    "id": "REV-48",
+    "bank": "revisoria",
+    "tema": "Informes y responsabilidades",
+    "nivel": "avanzado",
+    "question": "La comunicación de las cuestiones clave de la auditoría (KAM) conforme a la NIA 701 es obligatoria en las auditorías de estados financieros de:",
+    "options": [
+      "Todas las entidades obligadas a tener revisor fiscal",
+      "Entidades del Grupo 3 (microempresas)",
+      "Entidades cotizadas (y cuando una disposición legal o el auditor así lo decida)",
+      "Entidades sin ánimo de lucro exclusivamente"
+    ],
+    "answer": 2,
+    "reference": "NIA 701, párr. 5"
+  },
+  {
+    "id": "REV-49",
+    "bank": "revisoria",
+    "tema": "Informes y responsabilidades",
+    "nivel": "avanzado",
+    "question": "Conforme al Estatuto Tributario, la firma del revisor fiscal en las declaraciones tributarias certifica que:",
+    "options": [
+      "Los libros de contabilidad se llevan en debida forma, reflejan razonablemente la situación financiera de la empresa y las operaciones registradas se sometieron a las retenciones en la fuente cuando era procedente",
+      "Las cifras declaradas son exactas y la DIAN no podrá fiscalizarlas",
+      "La declaración fue elaborada personalmente por el revisor fiscal",
+      "El contribuyente se encuentra a paz y salvo con sus obligaciones tributarias"
+    ],
+    "answer": 0,
+    "reference": "Estatuto Tributario, art. 581. Además, la declaración que debiendo estar firmada por revisor fiscal se presente sin esa firma se tiene por no presentada (art. 580, lit. d)"
+  },
+  {
+    "id": "REV-50",
+    "bank": "revisoria",
+    "tema": "Informes y responsabilidades",
+    "nivel": "avanzado",
+    "question": "En materia de responsabilidad del revisor fiscal, es correcto afirmar que:",
+    "options": [
+      "Solo responde disciplinariamente ante la Junta Central de Contadores",
+      "Responde civilmente por los perjuicios que ocasione a la sociedad, a sus asociados o a terceros por negligencia o dolo, y penalmente cuando, a sabiendas, autorice balances con inexactitudes graves o rinda informes con tales inexactitudes",
+      "Su responsabilidad se limita al monto de sus honorarios anuales",
+      "Queda exonerado de toda responsabilidad si la asamblea aprueba los estados financieros"
+    ],
+    "answer": 1,
+    "reference": "Arts. 211 y 212 del Código de Comercio; en concordancia con el art. 216 (sanciones por incumplimiento de funciones) y la responsabilidad disciplinaria ante la JCC"
   }
 ]

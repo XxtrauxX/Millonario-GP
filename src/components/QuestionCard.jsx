@@ -10,38 +10,27 @@ export default function QuestionCard({ question, onAnswer, timeLimit = 60, lifel
     const [isPaused, setIsPaused] = useState(false);
     const [activeModal, setActiveModal] = useState(null); // 'audience', 'friend', null
 
-    // Reset state when question changes
-    useEffect(() => {
-        setSelectedOption(null);
-        setRevealed(false);
-        setTimeLeft(timeLimit);
-        setHiddenOptions([]);
-        setIsPaused(false);
-        setActiveModal(null);
-    }, [question, timeLimit]);
+    // No hace falta reiniciar el estado cuando cambia la pregunta: Game monta este
+    // componente con una `key` distinta por pregunta, así que vuelve a arrancar solo.
 
-    // Timer Logic
+    // Cuenta regresiva. El tiempo agotado se resuelve dentro del callback del
+    // temporizador: avisar desde dentro del updater de setTimeLeft registraba la
+    // respuesta dos veces.
     useEffect(() => {
-        if (revealed || timeLeft === 0 || isPaused) return;
+        if (revealed || isPaused || timeLeft === 0) return;
 
-        const timerId = setInterval(() => {
-            setTimeLeft((prev) => {
-                if (prev <= 1) {
-                    clearInterval(timerId);
-                    handleTimeOut();
-                    return 0;
-                }
-                return prev - 1;
-            });
+        const timerId = setTimeout(() => {
+            if (timeLeft > 1) {
+                setTimeLeft(timeLeft - 1);
+                return;
+            }
+            setTimeLeft(0);
+            setRevealed(true);
+            onAnswer(null, true);
         }, 1000);
 
-        return () => clearInterval(timerId);
-    }, [revealed, timeLeft, isPaused]);
-
-    const handleTimeOut = () => {
-        setRevealed(true);
-        onAnswer(null, true); // null index, true for timeout
-    };
+        return () => clearTimeout(timerId);
+    }, [revealed, isPaused, timeLeft, onAnswer]);
 
     const handleOptionClick = (index) => {
         if (revealed || hiddenOptions.includes(index) || isPaused) return; // Prevent clicking if hidden or paused

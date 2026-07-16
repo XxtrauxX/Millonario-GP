@@ -1,90 +1,78 @@
 import { useState } from 'react';
+import participantsData from '../data/participants.json';
+import { QUESTIONS_PER_PLAYER, SECONDS_PER_QUESTION, buildLineup } from '../data/assignQuestions';
 
 export default function SetupScreen({ onStartGame }) {
-    // Initial state for 10 teams, each with 2 members
-    const [teams, setTeams] = useState(
-        Array.from({ length: 10 }, (_, i) => ({
-            id: i,
-            name1: '',
-            name2: '',
-        }))
-    );
+    const [order, setOrder] = useState([]);
+    const [excluded, setExcluded] = useState(() => new Set());
 
-    const handleInputChange = (index, field, value) => {
-        const newTeams = [...teams];
-        newTeams[index][field] = value;
-        setTeams(newTeams);
+    const loadParticipants = () => setOrder(buildLineup(participantsData));
+
+    const toggle = (id) => {
+        setExcluded((prev) => {
+            const next = new Set(prev);
+            next.has(id) ? next.delete(id) : next.add(id);
+            return next;
+        });
     };
+
+    const roster = order.filter((p) => !excluded.has(p.id));
+    const turnOf = new Map(roster.map((person, index) => [person.id, index + 1]));
 
     const handleStart = () => {
-        // Validate all fields are filled
-        const allFilled = teams.every(team => team.name1.trim() !== '' && team.name2.trim() !== '');
-
-        if (allFilled) {
-            onStartGame(teams);
-        } else {
-            alert('Por favor, ingresa los nombres de todos los integrantes de los 10 equipos.');
+        if (roster.length === 0) {
+            alert('Selecciona al menos una persona para jugar.');
+            return;
         }
-    };
-
-    // Helper to auto-fill for testing/demo purposes
-    // Helper to auto-fill for testing/demo purposes
-    const fillDummyData = () => {
-        const specificTeams = [
-            { name1: "Manuella Hernandez", name2: "Vanesa Usuga" },
-            { name1: "Viviana Marcela Chavez", name2: "Yadira Mosquera" },
-            { name1: "Estefania Garcia", name2: "Manuela Rico" },
-            { name1: "Natalia Naranja", name2: "Ivon Violet" },
-            { name1: "Jonatan Gaviria", name2: "Alejandra Mosquera" },
-            { name1: 'Mauricio "el crack" Rios', name2: "Leidy Marin" },
-            { name1: "Carlos Andres Tuta", name2: "Katherine Ramirez" },
-            { name1: "Favian Coava", name2: "Stefany Vanegas" },
-            { name1: "Joer Martinez", name2: "Valentina Gomez" },
-            { name1: "Tania Correa", name2: "Camilo Asprilla" }
-        ];
-
-        const newTeams = teams.map((t, i) => ({
-            ...t,
-            name1: specificTeams[i]?.name1 || '',
-            name2: specificTeams[i]?.name2 || ''
-        }));
-        setTeams(newTeams);
+        onStartGame(roster);
     };
 
     return (
         <div className="game-container setup-screen">
-            <h1 className="text-gradient">Registro de Equipos</h1>
-            <p style={{ textAlign: 'center', marginBottom: '20px' }}>
-                Ingresa los nombres de los 2 integrantes por cada grupo.
+            <h1 className="text-gradient">Evaluación semestral 2026</h1>
+            <p className="setup-intro">
+                Juega una persona a la vez, en el orden de la lista. Cada participante responde{' '}
+                <strong>{QUESTIONS_PER_PLAYER} preguntas</strong> y cuenta con{' '}
+                <strong>{SECONDS_PER_QUESTION} segundos</strong> por cada una.
             </p>
 
-            <div className="teams-grid">
-                {teams.map((team, index) => (
-                    <div key={team.id} className="team-input-card">
-                        <h3>Grupo {index + 1}</h3>
-                        <div className="input-group">
+            {order.length === 0 ? (
+                <div className="empty-roster">
+                    <p>Carga los participantes para definir el orden de juego.</p>
+                </div>
+            ) : (
+                <div className="roster-grid">
+                    {order.map((person) => (
+                        <label
+                            key={person.id}
+                            className={`roster-card ${excluded.has(person.id) ? 'excluded' : ''}`}
+                        >
                             <input
-                                type="text"
-                                placeholder={`Nombre Integrante ${index * 2 + 1}`}
-                                value={team.name1}
-                                onChange={(e) => handleInputChange(index, 'name1', e.target.value)}
+                                type="checkbox"
+                                checked={!excluded.has(person.id)}
+                                onChange={() => toggle(person.id)}
                             />
-                            <input
-                                type="text"
-                                placeholder={`Nombre Integrante ${index * 2 + 2}`}
-                                value={team.name2}
-                                onChange={(e) => handleInputChange(index, 'name2', e.target.value)}
-                            />
-                        </div>
-                    </div>
-                ))}
-            </div>
+                            <span className="roster-turn">{turnOf.get(person.id) ?? '–'}</span>
+                            <span className="roster-name">{person.name}</span>
+                        </label>
+                    ))}
+                </div>
+            )}
 
             <div className="setup-actions">
-                <button className="btn-secondary" onClick={fillDummyData} style={{ marginRight: '10px' }}>
-                    Cargar Participantes
+                {order.length > 0 && (
+                    <p className="roster-count">
+                        Participan <strong>{roster.length}</strong> de {participantsData.length} personas
+                    </p>
+                )}
+                <button
+                    className="btn-secondary"
+                    onClick={loadParticipants}
+                    style={{ marginRight: '10px' }}
+                >
+                    {order.length === 0 ? 'Cargar Participantes' : '🔀 Reordenar'}
                 </button>
-                <button className="btn-primary" onClick={handleStart}>
+                <button className="btn-primary" onClick={handleStart} disabled={roster.length === 0}>
                     Comenzar Juego
                 </button>
             </div>
@@ -93,45 +81,71 @@ export default function SetupScreen({ onStartGame }) {
                 .setup-screen {
                     max-width: 1000px;
                     overflow-y: auto;
-                    max-height: 90vh;
+                    max-height: 95vh;
                     padding-bottom: 50px;
                 }
-                .teams-grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                    gap: 15px;
-                    margin-bottom: 20px;
+                .setup-intro {
+                    text-align: center;
+                    max-width: 720px;
+                    margin: 0 auto 25px auto;
+                    line-height: 1.6;
+                    color: #ddd;
                 }
-                .team-input-card {
-                    background: rgba(255, 255, 255, 0.1);
-                    padding: 15px;
+                .empty-roster {
+                    text-align: center;
+                    color: #888;
+                    font-style: italic;
+                    padding: 40px 20px;
+                    border: 1px dashed rgba(255, 255, 255, 0.2);
                     border-radius: 10px;
-                    border: 1px solid rgba(255, 255, 255, 0.2);
                 }
-                .team-input-card h3 {
-                    margin-top: 5px;
-                    margin-bottom: 10px;
-                    color: #ffd700;
-                }
-                .input-group {
-                    display: flex;
-                    flex-direction: column;
+                .roster-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                     gap: 8px;
                 }
-                .input-group input {
-                    padding: 8px;
-                    border-radius: 5px;
-                    border: none;
-                    background: rgba(0, 0, 0, 0.5);
-                    color: white;
+                .roster-card {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    background: rgba(255, 255, 255, 0.08);
+                    border: 1px solid rgba(255, 255, 255, 0.15);
+                    padding: 10px 12px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: opacity 0.15s ease;
                 }
-                .input-group input::placeholder {
-                    color: rgba(255, 255, 255, 0.5);
-                    font-style: italic;
+                .roster-card.excluded {
+                    opacity: 0.4;
+                }
+                .roster-card.excluded .roster-name {
+                    text-decoration: line-through;
+                }
+                .roster-card input {
+                    accent-color: #ffd700;
+                    width: 16px;
+                    height: 16px;
+                    cursor: pointer;
+                    flex-shrink: 0;
+                }
+                .roster-turn {
+                    color: #ffd700;
+                    font-weight: bold;
+                    min-width: 22px;
+                    text-align: right;
+                    flex-shrink: 0;
+                }
+                .roster-name {
+                    color: #fff;
+                    flex: 1;
                 }
                 .setup-actions {
                     text-align: center;
                     margin-top: 20px;
+                }
+                .roster-count {
+                    color: #aaa;
+                    margin-bottom: 12px;
                 }
             `}</style>
         </div>
